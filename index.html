@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Emprende<span>.</span></a>
+        <a href="#" class="logo">TEDU<span>.</span></a>
         <ul class="navigation">
             <li><a href="#banner">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">Nosotros</a></li>
             <li><a href="#academy">TEDU Academy</a></li>
             <li><a href="#mmbresias">Membresías</a></li>
             <li><a href="#testimonials">Testimonios</a></li>
@@ -24,8 +24,30 @@
             <h2>TEDU Emprende</h2>
             <p>
                 Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.</p>
-                <a href="#" class="btn">Our Services</a>
+                <a href="#" class="btn">Servicios</a>
         </div>
     </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>N</span>osotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi, nesciunt quae ipsum dolor repudiandae eos non dicta, ab corporis, quasi fuga! Fugiat explicabo, inventore quae sunt earum reiciendis numquam <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati possimus dolorem aspernatur, accusamus necessitatibus vero laborum totam cupiditate vitae commodi provident rerum quia nemo magni minima repellendus ipsam aperiam.
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="Images/image1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+        });
+    </script>
 </body>
 </html>
