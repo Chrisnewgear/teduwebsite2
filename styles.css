@@ -221,3 +221,12 @@ section{
     height: 100%;
     object-fit: cover;
 }
+
+.academy .content .box .text{
+    padding: 15px 0 5px;  
+}
+
+.academy .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
