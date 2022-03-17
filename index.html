@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEDU WEB SITE</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="JS/scrollreveal.js"></script>
 </head>
 <body>
     <header>
         <a href="#" class="logo">TEDU<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
             <li><a href="#banner">Home</a></li>
             <li><a href="#about">Nosotros</a></li>
@@ -22,9 +24,9 @@
     </header>
     <section class="banner" id="banner">
         <div class="content">
-            <h2>TEDU</h2>
+            <h2>TEDU<span>.</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus blanditiis, facere assumenda eum quod dignissimos et, reiciendis, illo molestias repellendus fuga corrupti quos aliquid provident! Distinctio beatae aspernatur ipsum..</p>
-            <a href="#" class="btn">Servicios</a>
+            <a href="#contact" class="btn">Contáctanos</a>
         </div>
     </section>
 
@@ -117,7 +119,7 @@
             </div>
         </div>
         <div class="title">
-            <a href="https://www.tedu.ec/emp/?id=2&sectionview=home" target="_blank" class="btn2">Ser miembro</a>
+            <a href="https://www.tedu.ec/emp/?id=2&sectionview=home" class="btn2">Ser miembro</a>
         </div> 
     </section>
 
@@ -179,17 +181,47 @@
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet numquam magnam vel nam neque repellendus fuga iure obcaecati porro tempore. Nulla vel repudiandae, ratione quidem obcaecati sequi nemo non. Nemo.</p>
                     <h3>Testimonio 3</h3>
-                    
                 </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontáctanos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam impedit sunt quaerat unde itaque placeat optio deleniti dolor nihil ab corporis blanditiis eaque enim, sit sequi nemo. Obcaecati, dolorum provident!</p>
+        </div>
+        <div class="contactForm">
+            <h3>Escríbenos</h3>
+            <div class="inputBox">
+                <input class="input-text" type="text" placeholder="Nombre completo*" required>
+            </div>
+
+            <div class="inputBox">
+                <input class="input-text" type="number" placeholder="Telefono*" required>
+            </div>
+
+            <div class="inputBox">
+                <input class="input-text" type="email" placeholder="Tu email*" required>
+            </div>
+
+            <div class="inputBox">
+                <input class="input-text" type="text" placeholder="ciudad*" required>
+            </div>
+            <div class="inputBox">
+                <textarea class="input-text" placeholder="Mensaje opcional"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Enviar">
             </div>
         </div>
     </section>
 
-    <script type="text/javascript">
-        window.addEventListener('scroll', function(){
-            const header = document.querySelector('header');
-            header.classList.toggle("sticky", window.scrollY > 0)
-        });
-    </script>
+    <div class="copyrightText">
+        <p>Copyright 2022 <a href="#">TEDU</a>. All Rights Reserved</p>
+    </div>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/index.js"></script>
 </body>
 </html>
