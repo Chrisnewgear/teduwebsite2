@@ -11,15 +11,15 @@
 <body>
     <header>
         <a href="#" class="logo">TEDU<span>.</span></a>
-        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
         <ul class="navigation">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#about">Nosotros</a></li>
-            <li><a href="#academy">TEDU Academy</a></li>
-            <li><a href="#memberships">TEDU Emprende</a></li>
-            <li><a href="#founders">Fundadores</a></li>
-            <li><a href="#testimonials">Testimonios</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">Nosotros</a></li>
+            <li><a href="#academy" onclick="toggleMenu();">TEDU  Academy</a></li>
+            <li><a href="#memberships" onclick="toggleMenu();">TEDU Emprende</a></li>
+            <li><a href="#founders" onclick="toggleMenu();">Fundadores</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu();">Testimonios</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
     <section class="banner" id="banner">
@@ -221,7 +221,17 @@
         <p>Copyright 2022 <a href="#">TEDU</a>. All Rights Reserved</p>
     </div>
 
-    <script src="JS/script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle')
+            menuToggle.classList.toggle('active');
+        }
+    </script>
     <script src="JS/index.js"></script>
 </body>
 </html>
