@@ -93,7 +93,7 @@ header{
     padding: 40px 100px;
     z-index: 10000;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     transition: .5s;
 }
@@ -101,7 +101,7 @@ header{
 header.sticky{
     background: #fff;
     padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(189, 39, 39, 0.05);
 }
 
 header .logo{
@@ -426,7 +426,8 @@ section{
         background: url(Images/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
-        background-position: center;background: url(Images/menu.png);
+        background-position: center;
+        background: url(Images/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
@@ -437,59 +438,5 @@ section{
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
-    }
-    header.sticky .menuToggle{
-        filter: invert(1);
-    }
-    section{
-        padding: 20px;
-    }
-    .banner .content h2{
-        font-size: 3em;
-        color: #fff;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .row .col50{
-        position: relative;
-        width: 100%;
-    }
-    .row .col50 .imgBx{
-        height: 300px;
-        padding-top: 20px;
-    }
-    .menu .content{
-        margin-top: 20px;
-    }
-    .menu .content .box{
-        margin: 10px;
-    }
-    .menu .content .box .imgBx{
-        height: 260px;
-    }
-    .title{
-        text-align: center;
-    }
-    .titleText{
-        font-size: 1.8em;
-        line-height: 1.5em;
-        margin-bottom: 15px;
-        font-weight: 300;
-    }
-    .testimonials .content .box{
-        width: 340px;
-        margin: 10px;
-    }
-    .contactForm{
-        padding: 35px 40px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    @media (max-width: 480px){
-        .banner .content h2{
-            font-size: 2.2em;
-            color: #fff;
-        }
     }
 }
