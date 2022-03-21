@@ -93,7 +93,7 @@ header{
     padding: 40px 100px;
     z-index: 10000;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     transition: .5s;
 }
@@ -101,7 +101,7 @@ header{
 header.sticky{
     background: #fff;
     padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(189, 39, 39, 0.05);
 }
 
 header .logo{
@@ -420,7 +420,5 @@ section{
         background-repeat: no-repeat;
         background-position: center;
     }
-    header.sticky .menuToggle{
-        
-    }
+
 }
