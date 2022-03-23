@@ -501,14 +501,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    min-height: 100vh;
-    background: #333;
+    box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
 }
 
 .footer_div{
     position: relative;
     width: 100%;
-    background: #ff0157;
+    background: #fff;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -533,8 +532,8 @@ footer{
 }
 
 .footer_div .social_icon li i{
-    font-size: 2em;
-    color: #fff;
+    font-size: 2.5em;
+    color: #111;
     margin: 0 10px;
     display: inline-block;
     transition: .5s;
@@ -545,8 +544,8 @@ footer{
 }
 
 .footer_div .menu li a{
-    font-size: 1.2em;
-    color: #fff;
+    font-size: 1em;
+    color: #111;
     margin: 0 10px;
     display: inline-block;
     transition: .5s;
@@ -558,6 +557,10 @@ footer{
     opacity: 1;
 }
 
-.footer_div p{
-    color: #fff;
+footer .footer_div p{
+    color: #111;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
