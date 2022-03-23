@@ -22,3 +22,15 @@ sr.reveal('.btn', {
     origin: 'top',
     distance: '-100px'
 });
+
+sr.reveal('.navigation', {
+    duration: 3000,
+    origin: 'top',
+    distance: '-100px'
+});
+
+sr.reveal('.active', {
+    duration: 3000,
+    origin: 'top',
+    distance: '-100px'
+});
