@@ -541,6 +541,7 @@ footer{
 
 .footer_div .social_icon li i:hover{
     transform: translateY(-10px);
+    color: #ff0157;
 }
 
 .footer_div .menu li a{
@@ -555,6 +556,7 @@ footer{
 
 .footer_div .menu li a:hover{
     opacity: 1;
+    color: #ff0157;
 }
 
 footer .footer_div p{
