@@ -5,6 +5,12 @@ sr.reveal('.navigation', {
     distance: '-100px'
 });
 
+sr.reveal('.menuToggle', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '-100px'
+});
+
 sr.reveal('.logo', {
     duration: 1000,
     origin: 'bottom',

@@ -178,7 +178,7 @@ section{
     width: 100%;
     /*min-height: 300px;*/
     height: 100%;
-    box-shadow: 7px 6px 14px 0px rgba(0,0,0,0.75);
+    /*box-shadow: 7px 4px 10px 0px rgba(0,0,0,0.75)*/;
 }
 
 .row .col50 .imgBx img{
@@ -211,6 +211,11 @@ section{
     margin: 20px;
     border: 15px solid #fff;
     box-shadow: 0px 5px 35px rgba(0,0,0,0.08);
+    transition: .3s;
+}
+
+.academy .content .box:hover{
+    transform: scale(1.1);
 }
 
 .academy .content .box .imgBx{
@@ -237,7 +242,7 @@ section{
     color: #111;
 }
 
-.founders .content{
+/*.founders .content{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -272,7 +277,7 @@ section{
 .founders .content .box .text h3{
     font-weight: 400;
     color: #111;
-}
+}*/
 
 .testimonials{
     background: url(Images/testimonials_bg4.jpg);
@@ -301,6 +306,11 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: .3s;
+}
+
+.testimonials .content .box:hover{
+    transform: scale(1.1);
 }
 
 .testimonials .content .box .imgBx{
@@ -395,6 +405,7 @@ section{
 footer .footer_div h2{
     color: #fff;
 }
+
 /*=======================MEDIA QUERIES=======================*/
 
 @media (max-width: 991px){
