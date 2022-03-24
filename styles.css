@@ -553,6 +553,7 @@ footer{
     transition: .5s;
     text-decoration: none;
     opacity: 0.75;
+    line-height: 2.5em;
 }
 
 .footer_div .menu li a:hover{
