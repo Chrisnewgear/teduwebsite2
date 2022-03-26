@@ -57,6 +57,7 @@ body{
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 50px;
     letter-spacing: 2px;
     transition: .5s;
 }
@@ -171,12 +172,13 @@ section{
     font-size: 1.5em;
 }
 
+
 .row .col50 .imgBx{
     position: relative;
     width: 100%;
     /*min-height: 300px;*/
     height: 100%;
-    box-shadow: 7px 6px 14px 0px rgba(0,0,0,0.75);
+    /*box-shadow: 7px 4px 10px 0px rgba(0,0,0,0.75)*/;
 }
 
 .row .col50 .imgBx img{
@@ -209,6 +211,11 @@ section{
     margin: 20px;
     border: 15px solid #fff;
     box-shadow: 0px 5px 35px rgba(0,0,0,0.08);
+    transition: .3s;
+}
+
+.academy .content .box:hover{
+    transform: scale(1.1);
 }
 
 .academy .content .box .imgBx{
@@ -235,7 +242,7 @@ section{
     color: #111;
 }
 
-.founders .content{
+/*.founders .content{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -270,7 +277,7 @@ section{
 .founders .content .box .text h3{
     font-weight: 400;
     color: #111;
-}
+}*/
 
 .testimonials{
     background: url(Images/testimonials_bg4.jpg);
@@ -299,6 +306,12 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+.testimonials .content .box:hover{
+    transform: scale(1.1);
 }
 
 .testimonials .content .box .imgBx{
@@ -390,6 +403,10 @@ section{
     text-decoration: none;
 }
 
+footer .footer_div h2{
+    color: #fff;
+}
+
 /*=======================MEDIA QUERIES=======================*/
 
 @media (max-width: 991px){
@@ -423,10 +440,6 @@ section{
         position: relative;
         width: 40px;
         height: 40px;
-        background: url(Images/menu.png);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
         background: url(Images/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
@@ -496,101 +509,76 @@ section{
     }
 }
 
-@media (max-width: 991px){
-    .footer .grupo-1 .box .footer_navigation {
-        background-color: #ff0157;
-        margin-left: 200px;
-    }
+/*=============FOOTER STYLE=============*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.9);
+
 }
 
-.footer {
+.footer_div{
+    position: relative;
     width: 100%;
-    box-shadow: -1px 2px 33px 0px rgba(0,0,0,0.75);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-.footer .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-
-.footer .grupo-1 .box .footer_logo{
-    width: 100%;
-    height: 100%;
+    background: #fff;
+    min-height: 100px;
+    padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.footer .grupo-1 .box .footer_navigation{
-    color: #111;
-    margin-bottom: 25px;
-    font-size: 20px;
-    list-style-type: none;
-    margin-left: 100px;
-    padding: 10px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    
 }
 
-.footer .grupo-1 .box .footer_navigation li a{
-    text-decoration: none;
-    color: #111;
-    transition: .3s ease;
-}
-
-.footer .grupo-1 .box .footer_navigation li a:hover{
-    color: #ff0157;
-}
-.footer .grupo-1 .box h2{
-    color: #111;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-.footer .grupo-1 .box h2{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.footer .grupo-1 .box .socials{
+.footer_div .social_icon,
+.footer_div .menu{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
 }
-.footer .grupo-1 .box .socials a{
-    color: #fff;
+
+.footer_div .social_icon li,
+.footer_div .menu li{
+    list-style: none;
+}
+
+.footer_div .social_icon li i{
+    font-size: 2.5em;
+    color: #111;
+    margin: 0 10px;
     display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    margin-right: 10px;
-    background-color: #555;
-    text-align: center;
-    transition: all 300ms ease;
-    border-radius: 50px;
+    transition: .5s;
 }
 
-.footer .grupo-1 .box .socials a:hover{
-    color:#ff0157;
-    background-color: #fff;
-}
-
-footer .footer_logo{
-    color:#111;
-    font-weight: 700;
-    font-size: 3em;
-    text-decoration: none;
-}
-
-footer a span{
+.footer_div .social_icon li i:hover{
+    transform: translateY(-10px);
     color: #ff0157;
+}
+
+.footer_div .menu li a{
+    font-size: 1em;
+    color:#111;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .5s;
+    text-decoration: none;
+    opacity: 0.75;
+    line-height: 2.5em;
+}
+
+.footer_div .menu li a:hover{
+    opacity: 1;
+    transform: translateY(-10px);
+    color: #ff0157;
+}
+
+footer .footer_div p{
+    color: #111;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
