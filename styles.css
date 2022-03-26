@@ -24,7 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(Images/bg_image4.jpg);
+    background: url(Images/banner_bg.jpg);
     background-size: cover;
     box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75);
 }
@@ -133,7 +133,7 @@ header .navigation li{
 header .navigation li a{
     text-decoration: none;
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 header.sticky .navigation li a{
@@ -198,7 +198,46 @@ section{
     flex-direction: column;
 }
 
-.academy .content{
+/*===================PRODUCTS=====================*/
+.products{
+    background-image: url(Images/products_img_static_2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height:110em;
+}
+
+.products .title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+
+.products .titleText{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.products .titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.products .title p{
+    font-weight: 300;
+    color: #fff;
+}
+
+.products p{
+    font-weight: 300;
+    color: #111;
+}
+
+.products .content{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
@@ -206,25 +245,25 @@ section{
     margin-top: 40px;
 }
 
-.academy .content .box {
+.products .content .box {
     width: 340px;
-    margin: 20px;
+    height: 375px;
+    margin: 50px;
     border: 15px solid #fff;
-    box-shadow: 0px 5px 35px rgba(0,0,0,0.08);
     transition: .3s;
 }
 
-.academy .content .box:hover{
+.products .content .box:hover{
     transform: scale(1.1);
 }
 
-.academy .content .box .imgBx{
+.products .content .box .imgBx{
     position: relative;
     width: 100%;
     height: 300px;
 }
 
-.academy .content .box .imgBx img{
+.products .content .box .imgBx img{
     position: absolute;
     top: 0;
     left: 0;
@@ -233,11 +272,12 @@ section{
     object-fit: cover;
 }
 
-.academy .content .box .text{
-    padding: 15px 0 5px;
+.products .content .box .text{
+    padding: 15px 20px 5px;
+    background-color: #fff;
 }
 
-.academy .content .box .text h3{
+.products .content .box .text h3{
     font-weight: 400;
     color: #111;
 }
@@ -387,7 +427,7 @@ section{
 .contactForm .inputBox input[type="submit"]:hover{
     transform: scale(1.1);
 }
-
+/*
 .copyrightText{
     padding: 8px 40px;
     border-top: 1px solid rgba(0, 0, 0, .1);
@@ -401,7 +441,7 @@ section{
 .copyrightText a{
     color: #ff0157;
     text-decoration: none;
-}
+}*/
 
 footer .footer_div h2{
     color: #fff;
