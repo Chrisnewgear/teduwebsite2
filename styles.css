@@ -204,15 +204,32 @@ section{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height:110em;
 }
 
+.products .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.products .content .box {
+    width: 340px;
+    /*height: 365px;*/
+    margin: 50px;
+    border: 8px solid #fff;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+
 .products .title{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .products .titleText{
@@ -228,33 +245,20 @@ section{
 }
 
 .products .title p{
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
 }
 
-.products p{
+/*.products p{
     font-weight: 300;
     color: #111;
-}
+}*/
 
-.products .content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.products .content .box {
-    width: 340px;
-    height: 375px;
-    margin: 50px;
-    border: 15px solid #fff;
-    transition: .3s;
-}
 
 .products .content .box:hover{
-    transform: scale(1.1);
+    transform: translateY(-10px);
+
+
 }
 
 .products .content .box .imgBx{
@@ -270,16 +274,19 @@ section{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .products .content .box .text{
-    padding: 15px 20px 5px;
+    padding: 10px 20px 5px;
     background-color: #fff;
 }
 
 .products .content .box .text h3{
     font-weight: 400;
     color: #111;
+    text-align: center;
 }
 
 /*.founders .content{
@@ -498,6 +505,10 @@ footer .footer_div h2{
     section {
         padding: 20px;
     }
+
+    .banner{
+        background-position: center;
+    }
     .banner .content h2{
         font-size: 3em;
         color: #fff;
@@ -513,13 +524,17 @@ footer .footer_div h2{
         height: 300px;
         margin-top: 20px;
     }
-    .menu .content{
+
+    .products{
+        background-position: center;
+    }
+    .products .content{
         margin-top: 20px;
     }
-    .menu .content .box{
+    .products .content .box{
         margin: 10px;
     }
-    .menu .content .box .imgBx{
+    .products .content .box .imgBx{
         height: 260px;
     }
     .title{
@@ -531,6 +546,10 @@ footer .footer_div h2{
         margin-bottom: 15px;
         font-weight: 300;
     }
+
+    .testimonials{
+        background-position: center;
+    }
     .testimonials .content .box{
         margin: 10px;
         padding: 20px;
@@ -540,6 +559,7 @@ footer .footer_div h2{
         margin-top: 20px;
         margin-bottom: 30px;
     }
+    
 }
 
 @media (max-width: 480px){
