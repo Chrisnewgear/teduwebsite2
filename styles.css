@@ -575,7 +575,6 @@ footer{
     justify-content: center;
     align-items: flex-end;
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.9);
-
 }
 
 .footer_div{
@@ -598,6 +597,10 @@ footer{
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+}
+
+.footer_div h2{
+    color: #111;
 }
 
 .footer_div .social_icon li,
