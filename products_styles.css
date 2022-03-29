@@ -241,11 +241,12 @@ section{
 
 .investment{
     background-image: url(Images/investment-background.jpg);
-    background-color: #333;
-    background-blend-mode: soft-light;
+    background-color: #93b1f3;
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 
 .investment h2,
@@ -253,6 +254,20 @@ section{
     color: #fff;
 }
 
+.travel {
+    background-image: url(Images/travel_background.jpg);
+    background-color: #93b1f3;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.travel h2,
+.travel p{
+    color: #fff;
+}
 /*=============FOOTER STYLE=============*/
 footer{
     display: flex;
