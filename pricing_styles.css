@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+body{
+    background: red;
+}
+
+#pricing{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.prize{
+    position: relative;
+}
+
+.dollar{
+    position: absolute;
+    left: 20px;
+    color: #29803b;
+    font-weight: 600;
+}
+
+.number{
+    font-size: 50px;
+    color: #df588c;
+}
+
+.number1{
+    color: #ff0157;
+}
+
+.number2{
+    color: #e04141;
+}
+
+.number3{
+    color: #415cb6;
+}
+
+.number4{
+    color: #0a5592;
+}
+
+.month{
+    color: #29803b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.table{
+    background-color: #fff;
+    padding: 30px;
+}
+
+.benefits{
+    font-size: 14px;
+    color: #29803b;
+}
+
+.btn2{
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    font-size: 1em;
+    color:#fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .3s;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+.btn2:hover{
+    transform: scale(1.07);
+}
+
+#table2{
+    position: relative;
+    box-shadow: 0px 22px 18px 2px rgba(0,0,0,0.75);
+}
+.upper_square{
+    width: 230px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    box-shadow: 1px -8px 15px 2px rgba(0,0,0,0.75);
+}
+
+.lower_square{
+    width: 230px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    top: 320px;
+    left: 0;
+    box-shadow: 1px 22px 18px 2px rgba(0,0,0,0.75);
+}
