@@ -218,7 +218,7 @@ section{
     width: 340px;
     /*height: 365px;*/
     margin: 50px;
-    border: 8px solid #fff;
+    border: 12px solid #fff;
     transition: .3s;
     border-radius: 20px;
 }

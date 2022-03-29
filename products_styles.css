@@ -239,6 +239,20 @@ section{
     color: #111;
 }
 
+.investment{
+    background-image: url(Images/investment-background.jpg);
+    background-color: #333;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.investment h2,
+.investment p{
+    color: #fff;
+}
+
 /*=============FOOTER STYLE=============*/
 footer{
     display: flex;
@@ -399,3 +413,4 @@ footer .footer_div p{
     .title{
         text-align: center;
     }
+}
