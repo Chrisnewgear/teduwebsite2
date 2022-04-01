@@ -24,8 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: url(Images/PORTADA\ PRINCIPAL\ .jpg);*/
-    background: url(Images/banner_bg.jpg);
+    background: url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
     background-size: cover;
     box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75);
 }
@@ -35,14 +34,15 @@ body{
     text-align: center;
 }
 
-.banner .content h2{
-    font-size: 5em;
-    color: #fff;
+.banner .content img{
+    width: 500px;
+    height: 180px;
 }
 
-.banner .content h2 span{
-    color: #ff0157;
-}
+
+/* .banner .content h2 span{
+    color: #e12a4c;
+} */
 
 .banner .content p{
     font-size: 1em;
@@ -53,7 +53,7 @@ body{
 .btn{
     font-size: 1em;
     color:#fff;
-    background: #ff0157;
+    background: #e12a4c;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
@@ -72,7 +72,7 @@ body{
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     font-size: 1em;
     color:#fff;
-    background: #ff0157;
+    background: #e12a4c;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
@@ -119,7 +119,7 @@ header.sticky .logo{
 }
 
 header .logo span{
-    color: #ff0157;
+    color: #e12a4c;
 }
 
 header .navigation{
@@ -143,7 +143,7 @@ header.sticky .navigation li a{
 }
 
 header .navigation li a:hover{
-    color: #ff0157;
+    color: #e12a4c;
 }
 
 section{
@@ -169,7 +169,7 @@ section{
 }
 
 .titleText span{
-    color: #ff0157;
+    color: #e12a4c;
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -225,6 +225,7 @@ section{
     border: 12px solid #fff;
     transition: .3s;
     border-radius: 20px;
+    transition: 0.3s;
 }
 
 
@@ -243,7 +244,7 @@ section{
 }
 
 .products .titleText span{
-    color: #ff0157;
+    color: #e12a4c;
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -258,13 +259,6 @@ section{
     color: #111;
 }*/
 
-
-.products .content .box:hover{
-    transform: translateY(-10px);
-
-
-}
-
 .products .content .box .imgBx{
     position: relative;
     width: 100%;
@@ -278,19 +272,30 @@ section{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .products .content .box .text{
     padding: 10px 20px 5px;
     background-color: #fff;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 .products .content .box .text h3{
     font-weight: 400;
     color: #111;
     text-align: center;
+}
+
+.products .content .box:hover{
+    transform: translateY(-10px);
+    border: 12px solid #e12a4c;
+}
+
+.products .content .box div:last-child:hover{
+    background: #e12a4c;
 }
 
 /*.founders .content{
@@ -425,7 +430,7 @@ section{
 .contactForm .inputBox input[type="submit"]{
     font-size: 1em;
     color: #fff;
-    background-color: #ff0157;
+    background-color: #e12a4c;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
@@ -565,7 +570,6 @@ footer .footer_div h2{
         margin-top: 20px;
         margin-bottom: 30px;
     }
-    
 }
 
 @media (max-width: 480px){
@@ -624,7 +628,7 @@ footer .footer_div h2{
 
 .footer_div .social_icon li i:hover{
     transform: translateY(-10px);
-    color: #ff0157;
+    color: #e12a4c;
 }
 
 .footer_div .menu li a{
@@ -641,7 +645,7 @@ footer .footer_div h2{
 .footer_div .menu li a:hover{
     opacity: 1;
     transform: translateY(-10px);
-    color: #ff0157;
+    color: #e12a4c;
 }
 
 footer .footer_div p{
