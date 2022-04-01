@@ -599,7 +599,7 @@ footer{
     flex-wrap: wrap;
 }
 
-.footer_div h2{
+footer .footer_div h2{
     color: #111;
 }
 
