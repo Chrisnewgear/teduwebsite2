@@ -208,6 +208,7 @@ section{
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
+    padding: 40px 40px;
 }
 
 .products .content{
@@ -215,12 +216,11 @@ section{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .products .content .box {
     width: 340px;
-    /*height: 365px;*/
     margin: 50px;
     border: 12px solid #fff;
     transition: .3s;
@@ -283,10 +283,21 @@ section{
     border-bottom-right-radius: 7px;
 }
 
-.products .content .box .text h3{
+
+.products .content .box .text a{
+    text-decoration: none;
+}
+
+.products .content .box .text a h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 400;
     color: #111;
     text-align: center;
+    height: 20px;
+    transition: .3s;
+    padding-bottom: 0;
 }
 
 .products .content .box:hover{
@@ -294,10 +305,14 @@ section{
     border: 12px solid #e12a4c;
 }
 
-.products .content .box div:last-child:hover{
-    background: #e12a4c;
+.products .content .box .text:hover{ 
+    background-color: #e12a4c;
 }
 
+.products .content .box .text a h3:hover{ 
+    color: #fff;
+    font-weight: 800;
+}
 /*.founders .content{
     display: flex;
     justify-content: center;
