@@ -20,7 +20,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(Images/products_bg_5.jpg);
+    background: url(https://images.unsplash.com/photo-1602677416440-51e91ddeef89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-size: cover;
     box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75);
 }
@@ -255,13 +255,13 @@ section{
 }
 
 .travel {
-    background-image: url(Images/travel_background.jpg);
+    background-image: url(https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-color: #93b1f3;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .travel h2,
@@ -328,8 +328,21 @@ footer{
     line-height: 2.5em;
 }
 
+ .footer_div .menu li a i{
+    font-size: 2em;
+    color: #111;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .5s;
+}
+
 .footer_div .menu li a:hover{
     opacity: 1;
+    transform: translateY(-10px);
+    color: #ff0157;
+}
+
+.footer_div .menu li a i:hover{
     transform: translateY(-10px);
     color: #ff0157;
 }
@@ -427,5 +440,14 @@ footer .footer_div p{
     }
     .title{
         text-align: center;
+    }
+}
+
+@media (max-width: 1920px){
+    .row .col50 .imgBx{
+        height: 400px;
+        width: 100%;
+        margin-top: 20px;
+        
     }
 }
