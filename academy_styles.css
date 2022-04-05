@@ -30,14 +30,14 @@ p{
     text-align: center;
 }
 
-.banner .content h2{
-    font-size: 5em;
-    color: #fff;
+.banner .content img{
+    width: 700px;
+    height: 180px;
 }
 
-.banner .content h2 span{
+/* .banner .content h2 span{
     color: #ff0157;
-}
+} */
 
 .banner .content p{
     font-size: 1em;
@@ -66,7 +66,7 @@ p{
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     font-size: 1em;
     color:#fff;
-    background: #ff0157;
+    background: #f49231;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
@@ -113,7 +113,7 @@ header.sticky .logo{
 }
 
 header .logo span{
-    color: #ff0157;
+    color: #f49231;
 }
 
 header .navigation{
@@ -137,7 +137,7 @@ header.sticky .navigation li a{
 }
 
 header .navigation li a:hover{
-    color: #ff0157;
+    color: #f49231;
     font-weight: 500;
 }
 
@@ -164,7 +164,7 @@ section{
 }
 
 .titleText span{
-    color: #ff0157;
+    color: #f49231;
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -319,7 +319,7 @@ footer{
 
 .footer_div .social_icon li i:hover{
     transform: translateY(-10px);
-    color: #ff0157;
+    color: #f49231;
 }
 
 .footer_div .menu li a{
@@ -344,12 +344,12 @@ footer{
 .footer_div .menu li a:hover{
     opacity: 1;
     transform: translateY(-10px);
-    color: #ff0157;
+    color: #f49231;
 }
 
 .footer_div .menu li a i:hover{
     transform: translateY(-10px);
-    color: #ff0157;
+    color: #f49231;
 }
 
 footer .footer_div p{

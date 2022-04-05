@@ -266,12 +266,17 @@ section{
 }
 
 .products .content .box .imgBx img{
-    position: absolute;
+    FONT-VARIANT: JIS78;position: absolute;
+    background: #fff;
     top: 0;
     left: 0;
-    width: 100%;
+    /* display: block; */
+    /* text-align: center; */
+    /* justify-content: center;
+    align-items: center; */
+    width: 316px;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -301,16 +306,44 @@ section{
     padding-bottom: 0;
 }
 
-.products .content .box:hover{
+.products .content .box:nth-child(1):hover{
     transform: translateY(-10px);
-    border: 12px solid #e12a4c;
+    border: 12px solid #f49231;
 }
 
-.products .content .box .text:hover{ 
-    background-color: #e12a4c;
+.products .content .box .text-academy:hover{
+    background-color: #f49231;
 }
 
-.products .content .box .text a h3:hover{ 
+.products .content .box:nth-child(2):hover{
+    transform: translateY(-10px);
+    border: 12px solid #2377b8;
+}
+
+.products .content .box .text-seguros:hover{
+    background-color: #2377b8;
+}
+
+.products .content .box:nth-child(4):hover{
+    transform: translateY(-10px);
+    border: 12px solid #3eb24f;
+}
+
+.products .content .box .text-travel:hover{
+    background-color: #3eb24f;
+}
+
+.products .content .box:nth-child(5):hover{
+    transform: translateY(-10px);
+    border: 12px solid #65338d;
+}
+
+.products .content .box .text-investment:hover{
+    background-color: #65338d;
+}
+
+
+.products .content .box .text a h3:hover{
     color: #fff;
     font-weight: 800;
 }
