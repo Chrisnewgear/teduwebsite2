@@ -112,6 +112,9 @@ header .logo{
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+    border: 2px solid #e12a4c;
+    padding: 4px 4px;
+    border-radius: 8px;
 }
 
 header.sticky .logo{
@@ -219,15 +222,12 @@ section{
     margin-top: 20px;
 }
 
-.products .content .box {
+.products .content .box{
     width: 340px;
     margin: 50px;
-    border: 12px solid #fff;
     transition: .3s;
     border-radius: 20px;
-    transition: 0.3s;
 }
-
 
 .products .title{
     width: 100%;
@@ -266,26 +266,15 @@ section{
 }
 
 .products .content .box .imgBx img{
-    FONT-VARIANT: JIS78;position: absolute;
+    position: absolute;
     background: #fff;
     top: 0;
     left: 0;
-    /* display: block; */
-    /* text-align: center; */
-    /* justify-content: center;
-    align-items: center; */
-    width: 316px;
+    width: 336px;
     height: 100%;
     object-fit: contain;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.products .content .box .text{
-    padding: 10px 20px 5px;
-    background-color: #fff;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
     transition: .3s;
 }
 
@@ -299,54 +288,78 @@ section{
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    color: #111;
+    color: #fff;
+    font-weight: 800;
     text-align: center;
     height: 20px;
     transition: .3s;
     padding-bottom: 0;
 }
 
-.products .content .box:nth-child(1):hover{
-    transform: translateY(-10px);
-    border: 12px solid #f49231;
+.products .content .box:nth-child(1) {
+    border: 2px solid #f49231;
 }
 
-.products .content .box .text-academy:hover{
+.products .content .box:nth-child(2) {
+    border: 2px solid #2377b8;
+}
+
+.products .content .box:nth-child(3) {
+    border: 2px solid #bf0811;
+}
+
+.products .content .box:nth-child(4) {
+    border: 2px solid #3eb24f;
+}
+
+.products .content .box:nth-child(5) {
+    border: 2px solid #65338d;
+}
+
+.products .content .box .text-academy{
+    padding: 10px 20px 5px;
     background-color: #f49231;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transition: .3s;
 }
 
-.products .content .box:nth-child(2):hover{
-    transform: translateY(-10px);
-    border: 12px solid #2377b8;
-}
-
-.products .content .box .text-seguros:hover{
+.products .content .box .text-seguros{
+    padding: 10px 20px 5px;
     background-color: #2377b8;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transition: .3s;
 }
 
-.products .content .box:nth-child(4):hover{
-    transform: translateY(-10px);
-    border: 12px solid #3eb24f;
+.products .content .box .text-market{
+    padding: 10px 20px 5px;
+    background-color: #bf0811;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transition: .3s;
 }
 
-.products .content .box .text-travel:hover{
+.products .content .box .text-travel{
+    padding: 10px 20px 5px;
     background-color: #3eb24f;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transition: .3s;
 }
 
-.products .content .box:nth-child(5):hover{
-    transform: translateY(-10px);
-    border: 12px solid #65338d;
-}
-
-.products .content .box .text-investment:hover{
+.products .content .box .text-investment{
+    padding: 10px 20px 5px;
     background-color: #65338d;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transition: .3s;
 }
 
-
-.products .content .box .text a h3:hover{
-    color: #fff;
-    font-weight: 800;
+.products .content .box:hover{
+    transform: translateY(-10px);
 }
+
 /*.founders .content{
     display: flex;
     justify-content: center;
@@ -618,6 +631,11 @@ footer .footer_div h2{
         padding: 35px 40px;
         margin-top: 20px;
         margin-bottom: 30px;
+    }
+
+    .banner .content img{
+        width: 400px;
+        height: 150px;
     }
 }
 

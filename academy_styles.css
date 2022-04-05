@@ -95,6 +95,7 @@ header{
     transition: .5s;
 }
 
+
 header.sticky{
     background: #fff;
     padding: 10px 100px;
@@ -106,6 +107,9 @@ header .logo{
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+    border: 2px solid #f49231;
+    border-radius: 8px;
+    padding: 4px 4px;
 }
 
 header.sticky .logo{
@@ -199,12 +203,23 @@ section{
     padding: 50px;
 }
 
-.academy .content{
+.academy .recommended-courses{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px 20px;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.academy .content{
+    FONT-WEIGHT: 200;display: flex;
     justify-content: center;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 2   0px;
 }
 
 .academy .content .box {
@@ -445,6 +460,11 @@ footer .footer_div p{
     }
     .title{
         text-align: center;
+    }
+
+    .banner .content img{
+        width: 400px;
+        height: 120px;
     }
 }
 

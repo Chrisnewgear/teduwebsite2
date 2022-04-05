@@ -111,6 +111,9 @@ header .logo{
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+    border: 2px solid #2377b8;
+    border-radius: 8px;
+    padding: 4px 4px;
 }
 
 header.sticky .logo{
@@ -200,7 +203,7 @@ section{
     flex-direction: column;
 }
 
-.academy .content{
+/* .academy .content{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
@@ -242,9 +245,9 @@ section{
 .academy .content .box .text h3{
     font-weight: 400;
     color: #111;
-}
+} */
 
-.investment{
+/* .investment{
     background-image: url(Images/investment-background.jpg);
     background-color: #93b1f3;
     background-blend-mode: multiply;
@@ -257,9 +260,9 @@ section{
 .investment h2,
 .investment p{
     color: #fff;
-}
+} */
 
-.travel {
+.insurance-2 {
     background-image: url(https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-color: #93b1f3;
     background-blend-mode: multiply;
@@ -269,9 +272,13 @@ section{
     background-position: top;
 }
 
-.travel h2,
-.travel p{
+.insurance-2 h2,
+.insurance-2 p{
     color: #fff;
+}
+
+.insurance-2 .row .col50 .imgBx img{
+    border-radius: 20px;
 }
 /*=============FOOTER STYLE=============*/
 footer{
@@ -446,6 +453,12 @@ footer .footer_div p{
     .title{
         text-align: center;
     }
+
+    .banner .content img{
+        width: 400px;
+        height: 120px;
+    }
+
 }
 
 @media (max-width: 1920px){
@@ -453,6 +466,5 @@ footer .footer_div p{
         height: 400px;
         width: 100%;
         margin-top: 20px;
-        
     }
 }
