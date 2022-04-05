@@ -663,10 +663,31 @@ footer .footer_div h2{
     color: #e12a4c;
 }
 
+.footer_div .menu li a i{
+    font-size: 2em;
+    color: #111;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .5s;
+}
+
+.footer_div .menu li a i:hover{
+    transform: translateY(-10px);
+    color: #ff0157;
+}
 footer .footer_div p{
     color: #111;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 15px;
+}
+
+@media (max-width: 1920px){
+    .row .col50 .imgBx{
+        height: 400px;
+        width: 100%;
+        margin-top: 20px;
+        
+    }
 }
