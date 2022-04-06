@@ -20,8 +20,10 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(Images/products_bg_5.jpg);
+    background: url(Images/TEDU-ACADEMY-BANNER-2.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
     box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75);
 }
 
