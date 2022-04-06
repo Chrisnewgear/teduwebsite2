@@ -270,11 +270,11 @@ section{
     background: #fff;
     top: 0;
     left: 0;
-    width: 336px;
+    width: 328px;
     height: 100%;
     object-fit: contain;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
     transition: .3s;
 }
 
@@ -297,69 +297,74 @@ section{
 }
 
 .products .content .box:nth-child(1) {
-    border: 2px solid #f49231;
+    border: 6px solid #f49231;
 }
 
 .products .content .box:nth-child(2) {
-    border: 2px solid #2377b8;
+    border: 6px solid #2377b8;
 }
 
 .products .content .box:nth-child(3) {
-    border: 2px solid #bf0811;
+    border: 6px solid #bf0811;
 }
 
 .products .content .box:nth-child(4) {
-    border: 2px solid #3eb24f;
+    border: 6px solid #3eb24f;
 }
 
 .products .content .box:nth-child(5) {
-    border: 2px solid #65338d;
+    border: 6px solid #65338d;
 }
 
 .products .content .box .text-academy{
     padding: 10px 20px 5px;
     background-color: #f49231;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
     transition: .3s;
 }
 
 .products .content .box .text-seguros{
     padding: 10px 20px 5px;
     background-color: #2377b8;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
     transition: .3s;
 }
 
 .products .content .box .text-market{
     padding: 10px 20px 5px;
     background-color: #bf0811;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
     transition: .3s;
 }
 
 .products .content .box .text-travel{
     padding: 10px 20px 5px;
     background-color: #3eb24f;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
     transition: .3s;
 }
 
 .products .content .box .text-investment{
     padding: 10px 20px 5px;
     background-color: #65338d;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
     transition: .3s;
 }
 
 .products .content .box:hover{
-    transform: translateY(-10px);
+    transform: scale3d(1.03, 1.03, 1.03);
 }
 
+/*.products .content .box:nth-child(1):hover{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* padding-bottom: -5px;
+}*/
 /*.founders .content{
     display: flex;
     justify-content: center;

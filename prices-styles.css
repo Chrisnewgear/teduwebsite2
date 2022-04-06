@@ -130,12 +130,11 @@ section{
 }
 
 .memberships .container {
-    /* position: absolute; */
     margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 40px;
+    margin: 40px;
 }
 
 .memberships .container .table{
@@ -392,4 +391,126 @@ footer .footer_div p{
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 15px;
+}
+
+/*=======================MEDIA QUERIES=======================*/
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(Images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(Images/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+
+    .banner{
+        background-position: center;
+    }
+    .banner .content h2{
+        font-size: 3em;
+        color: #fff;
+    }
+
+    .memberships{
+        background-position: center;
+    }
+
+    .memberships .container .table{
+        margin-top: 20px;
+    }
+
+    .products .content .box{
+        margin: 10px;
+    }
+    .products .content .box .imgBx{
+        height: 260px;
+    }
+    .memberships-2 .row{
+        flex-direction: column;
+    }
+    .memberships-2 .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .memberships-2 .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .title{
+        text-align: center;
+    }
+    .titleText{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .testimonials{
+        background-position: center;
+    }
+    .testimonials .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .banner .content img{
+        width: 400px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px){
+    .banner .content h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
 }
