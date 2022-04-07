@@ -331,7 +331,7 @@ footer{
     color: #111;
     margin: 0 10px;
     display: inline-block;
-    transition: .5s;
+    transition: .3s;
 }
 
 .footer_div .social_icon li i:hover{
@@ -355,7 +355,7 @@ footer{
     color: #111;
     margin: 0 10px;
     display: inline-block;
-    transition: .5s;
+    transition: .3s;
 }
 
 .footer_div .menu li a:hover{

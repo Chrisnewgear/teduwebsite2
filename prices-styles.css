@@ -22,9 +22,6 @@ p{
     align-items: center;
     background: url(Images/MEMBRESIAS-BANNER.png);
     background-size: cover;
-    /* background-repeat: no-repeat; */
-    /* background-color: #dfe7f7;
-    background-blend-mode: luminosity; */
     /* box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75); */
 }
 
@@ -135,10 +132,12 @@ section{
     justify-content: center;
     align-items: center;
     margin: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .memberships .container .table{
-    width: 100%;
+    width: 340px;
     padding: 20px 20px;
     border-collapse: collapse;
     border-spacing: 0;
@@ -196,6 +195,7 @@ section{
 .memberships .container .table .imgBx img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .memberships .container .table h2{
@@ -214,6 +214,12 @@ section{
 .memberships .container .table .price p{
     font-weight: 400;
     font-size: 1.2rem;
+}
+
+.memberships .container .table .price p:nth-child(3){
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 50px;
 }
 
 .memberships .container .table .benefits p{
@@ -348,7 +354,7 @@ footer .footer_div h2{
     color: #111;
     margin: 0 10px;
     display: inline-block;
-    transition: .5s;
+    transition: .3s;
 }
 
 .footer_div .social_icon li i:hover{
@@ -378,7 +384,7 @@ footer .footer_div h2{
     color: #111;
     margin: 0 10px;
     display: inline-block;
-    transition: .5s;
+    transition: .3s;
 }
 
 .footer_div .menu li a i:hover{
@@ -456,6 +462,10 @@ footer .footer_div p{
     .memberships{
         background-position: center;
     }
+
+  /*   .memberships .container{
+        flex-wrap: wrap;
+    } */
 
     .memberships .container .table{
         margin-top: 20px;

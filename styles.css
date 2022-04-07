@@ -708,11 +708,12 @@ footer .footer_div h2{
     color:#111;
     margin: 0 10px;
     display: inline-block;
-    transition: .5s;
+    transition: .3s;
     text-decoration: none;
     opacity: 0.75;
     line-height: 2.5em;
 }
+
 
 .footer_div .menu li a:hover{
     opacity: 1;
@@ -725,7 +726,7 @@ footer .footer_div h2{
     color: #111;
     margin: 0 10px;
     display: inline-block;
-    transition: .5s;
+    transition: .3s;
 }
 
 .footer_div .menu li a i:hover{
