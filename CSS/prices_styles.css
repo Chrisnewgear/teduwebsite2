@@ -20,7 +20,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(Images/MEMBRESIAS-BANNER.png);
+    background: url(/Images/MEMBRESIAS-BANNER.png);
     background-size: cover;
     /* box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75); */
 }
@@ -432,14 +432,14 @@ footer .footer_div p{
         position: relative;
         width: 40px;
         height: 40px;
-        background: url(Images/menu.png);
+        background: url(/Images/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
     }
     .menuToggle.active{
-        background: url(Images/close.png);
+        background: url(/Images/close.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;

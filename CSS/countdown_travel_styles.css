@@ -20,7 +20,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(Images/MEMBRESIAS-BANNER.png);
+    background: url(/Images/MEMBRESIAS-BANNER.png);
     background-size: cover;
     /* box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75); */
 }
