@@ -199,6 +199,18 @@ header .navigation li a:hover{
     flex-direction: column;
 }
 
+.countdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    margin: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #3eb24f;
+    color: #fff;
+}
 
 /*=======================MEDIA QUERIES=======================*/
 
