@@ -20,7 +20,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://img.freepik.com/free-photo/tourist-from-mountain-top-sun-rays-man-wear-big-backpack-against-sun-light_1150-9129.jpg?t=st=1649705234~exp=1649705834~hmac=fdbd87157592e81b944c8b1e0b4be8a5e01c38d0971bffe3a0e435e7fa2dcaf6&w=740);
+    background: url(https://images.unsplash.com/photo-1583752028088-91e3e9880b46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
     background-size: cover;
     /* box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75); */
 }
@@ -41,7 +41,7 @@ p{
 }
 
 /* .banner .content h2 span{
-    color: #3eb24f;
+    color: #65338d;
 } */
 
 .banner .content p{
@@ -73,7 +73,7 @@ header .logo{
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
-    border: 2px solid #3eb24f;
+    border: 2px solid #65338d;
     padding: 4px 4px;
     border-radius: 8px;
 }
@@ -83,7 +83,7 @@ header.sticky .logo{
 }
 
 header .logo span{
-    color: #3eb24f;
+    color: #65338d;
 }
 
 header .navigation{
@@ -107,13 +107,13 @@ header.sticky .navigation li a{
 }
 
 header .navigation li a:hover{
-    color: #3eb24f;
+    color: #65338d;
 }
 
 .btn{
     font-size: 1em;
     color:#fff;
-    background: #3eb24f;
+    background: #65338d;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
@@ -132,7 +132,7 @@ header .navigation li a:hover{
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     font-size: 1em;
     color:#fff;
-    background: #3eb24f;
+    background: #65338d;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
@@ -168,7 +168,7 @@ header .navigation li a:hover{
 }
 
 .titleText span{
-    color: #3eb24f;
+    color: #65338d;
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -222,7 +222,7 @@ header .navigation li a:hover{
 }
 
 .simply-section{
-    /* background: #3eb24f; */
+    background: #65338d;
     width: 180px;
     height: 180px;
     margin: 0 20px;
@@ -419,7 +419,7 @@ footer .footer_div h2{
 
 .footer_div .social_icon li i:hover{
     transform: translateY(-10px);
-    color: #3eb24f;
+    color: #65338d;
 }
 
 .footer_div .menu li a{
@@ -437,7 +437,7 @@ footer .footer_div h2{
 .footer_div .menu li a:hover{
     opacity: 1;
     transform: translateY(-10px);
-    color: #3eb24f;
+    color: #65338d;
 }
 
 .footer_div .menu li a i{
@@ -450,7 +450,7 @@ footer .footer_div h2{
 
 .footer_div .menu li a i:hover{
     transform: translateY(-10px);
-    color: #3eb24f;
+    color: #65338d;
 }
 footer .footer_div p{
     color: #111;
