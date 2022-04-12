@@ -24,7 +24,7 @@ p{
     background-size: cover;
     /* background-color: #dfe7f7;
     background-blend-mode: luminosity; */
-    box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75);
+    /* box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75); */
 }
 
 .banner .content{
@@ -204,65 +204,6 @@ section{
     align-items: center;
     flex-direction: column;
 }
-
-/* .academy .content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.academy .content .box {
-    width: 340px;
-    margin: 20px;
-    border: 15px solid #fff;
-    box-shadow: 0px 5px 35px rgba(0,0,0,0.08);
-    transition: .3s;
-}
-
-.academy .content .box:hover{
-    transform: scale(1.1);
-}
-
-.academy .content .box .imgBx{
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
-
-.academy .content .box .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.academy .content .box .text{
-    padding: 15px 0 5px;
-}
-
-.academy .content .box .text h3{
-    font-weight: 400;
-    color: #111;
-} */
-
-/* .investment{
-    background-image: url(Images/investment-background.jpg);
-    background-color: #93b1f3;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-.investment h2,
-.investment p{
-    color: #fff;
-} */
 
 .market-2 {
     background-image: url(https://img.freepik.com/free-photo/woman-with-shopping-cart-buying-food-supermarket_342744-1131.jpg?t=st=1649195261~exp=1649195861~hmac=0f94cb7008a3c068cc8fdf48d6f89e5a6a74f5db6d6d76789622a73e1abd13a1&w=740);

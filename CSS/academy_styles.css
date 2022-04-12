@@ -24,7 +24,7 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
-    box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75);
+    /* box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75); */
 }
 
 .banner .content{

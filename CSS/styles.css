@@ -263,7 +263,7 @@ section{
 .products .content .box .imgBx{
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 
 .products .content .box .imgBx img{
@@ -271,7 +271,7 @@ section{
     background: #fff;
     top: 0;
     left: 0;
-    width: 328px;
+    width: 329px;
     height: 100%;
     object-fit: contain;
     border-top-left-radius: 14px;
@@ -299,22 +299,27 @@ section{
 
 .products .content .box:nth-child(1) {
     border: 6px solid #f49231;
+    height: 400px;
 }
 
 .products .content .box:nth-child(2) {
     border: 6px solid #2377b8;
+    height: 400px;
 }
 
 .products .content .box:nth-child(3) {
     border: 6px solid #bf0811;
+    height: 400px;
 }
 
 .products .content .box:nth-child(4) {
     border: 6px solid #3eb24f;
+    height: 400px;
 }
 
 .products .content .box:nth-child(5) {
     border: 6px solid #65338d;
+    height: 400px;
 }
 
 .products .content .box .text-academy{
@@ -323,6 +328,8 @@ section{
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     transition: .3s;
+    width: 330px;
+    height: 40px;
 }
 
 .products .content .box .text-seguros{
@@ -331,6 +338,8 @@ section{
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     transition: .3s;
+    width: 330px;
+    height: 40px;
 }
 
 .products .content .box .text-market{
@@ -339,6 +348,8 @@ section{
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     transition: .3s;
+    width: 330px;
+    height: 40px;
 }
 
 .products .content .box .text-travel{
@@ -347,6 +358,8 @@ section{
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     transition: .3s;
+    width: 330px;
+    height: 40px;
 }
 
 .products .content .box .text-investment{
@@ -355,10 +368,12 @@ section{
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     transition: .3s;
+    width: 330px;
+    height: 40px;
 }
 
 .products .content .box:hover{
-    transform: scale3d(1.03, 1.03, 1.03);
+    transform: translateY(-10px);
 }
 
 /*.products .content .box:nth-child(1):hover{
