@@ -631,6 +631,33 @@ footer .footer_div h2{
     .products .content .box .imgBx{
         height: 260px;
     }
+
+    .products .content .box:nth-child(1) {
+        border: 6px solid #f49231;
+        height: 311px;
+    }
+    
+    .products .content .box:nth-child(2) {
+        border: 6px solid #2377b8;
+        height: 311px;
+    }
+    
+    .products .content .box:nth-child(3) {
+        border: 6px solid #bf0811;
+        height: 311px;
+    }
+    
+    .products .content .box:nth-child(4) {
+        border: 6px solid #3eb24f;
+        height: 311px;
+    }
+    
+    .products .content .box:nth-child(5) {
+        border: 6px solid #65338d;
+        height: 311px;
+    }
+
+
     .title{
         text-align: center;
     }

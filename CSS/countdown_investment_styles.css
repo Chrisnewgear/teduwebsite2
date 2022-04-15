@@ -110,7 +110,7 @@ header .navigation li a:hover{
     color: #65338d;
 }
 
-.btn{
+/* .btn{
     font-size: 1em;
     color:#fff;
     background: #65338d;
@@ -146,7 +146,7 @@ header .navigation li a:hover{
 
 .btn2:hover{
     transform: scale(1.07);
-}
+} */
 
 
 .row{
@@ -286,14 +286,14 @@ header .navigation li a:hover{
         position: relative;
         width: 40px;
         height: 40px;
-        background: url(Images/menu.png);
+        background: url(/Images/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
     }
     .menuToggle.active{
-        background: url(Images/close.png);
+        background: url(/Images/close.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
@@ -312,55 +312,9 @@ header .navigation li a:hover{
         font-size: 3em;
         color: #fff;
     }
-    .row{
-        flex-direction: column;
-    }
-    .row .col50{
-        position: relative;
-        width: 100%;
-    }
-    .row .col50 .imgBx{
-        height: 300px;
-        margin-top: 20px;
-    }
-
-    .products{
-        background-position: center;
-    }
-    .products .content{
-        margin-top: 20px;
-    }
-    .products .content .box{
-        margin: 10px;
-    }
-    .products .content .box .imgBx{
-        height: 260px;
-    }
-    .title{
-        text-align: center;
-    }
-    .titleText{
-        font-size: 1.8em;
-        line-height: 1.5em;
-        margin-bottom: 15px;
-        font-weight: 300;
-    }
-
-    .testimonials{
-        background-position: center;
-    }
-    .testimonials .content .box{
-        margin: 10px;
-        padding: 20px;
-    }
-    .contactForm{
-        padding: 35px 40px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
 
     .banner .content img{
-        width: 400px;
+        width: 480px;
         height: 150px;
     }
 }
@@ -371,6 +325,7 @@ header .navigation li a:hover{
         color: #fff;
     }
 }
+
 
 /*=============FOOTER STYLE=============*/
 footer{

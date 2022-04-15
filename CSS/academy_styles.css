@@ -45,27 +45,9 @@ p{
     font-size: 1em;
     color: #fff;
 }
-/*
-.btn{
-    font-size: 1em;
-    color:#fff;
-    background: #ff0157;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 50px;
-    letter-spacing: 2px;
-    transition: .5s;
-}
 
-.btn:hover{
-    letter-spacing: 6px;
-}*/
 
 .btn2{
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     font-size: 1em;
     color:#fff;
     background: #f49231;
@@ -261,35 +243,6 @@ section{
     color: #111;
 }
 
-.investment{
-    background-image: url(/Images/investment-background.jpg);
-    background-color: #93b1f3;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-.investment h2,
-.investment p{
-    color: #fff;
-}
-
-.travel {
-    background-image: url(/Images/travel_background.jpg);
-    background-color: #93b1f3;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-.travel h2,
-.travel p{
-    color: #fff;
-}
 /*=============FOOTER STYLE=============*/
 footer{
     display: flex;
@@ -465,8 +418,8 @@ footer .footer_div p{
     }
 
     .banner .content img{
-        width: 400px;
-        height: 120px;
+        width: 480px;
+        height: 150px;
     }
 }
 

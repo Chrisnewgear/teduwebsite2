@@ -381,25 +381,13 @@ footer .footer_div p{
         margin-top: 20px;
     }
 
-    /* .products{
-        background-position: center;
-    }
-    .products .content{
-        margin-top: 20px;
-    }
-    .products .content .box{
-        margin: 10px;
-    }
-    .products .content .box .imgBx{
-        height: 260px;
-    } */
     .title{
         text-align: center;
     }
 
     .banner .content img{
         width: 400px;
-        height: 120px;
+        height: 150px;
     }
 
 }
