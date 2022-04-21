@@ -1,5 +1,5 @@
 
-    simplyCountdown('#countdown', {
+    simplyCountdown('#countdown',{
         year: 2022, // required
         month: 8, // required
         day: 1, // required

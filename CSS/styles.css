@@ -548,6 +548,36 @@ footer .footer_div h2{
     color: #fff;
 }
 
+/*========= WHATSAPP BUTTON =======*/
+.wsp-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.btn_wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75);
+    transition: .3s;
+}
+
+.btn_wsp:hover{
+    background:#fff;
+    color: #0df053;
+    transform: translateY(-10px);
+}
+
 /*=======================MEDIA QUERIES=======================*/
 
 @media (max-width: 991px){
@@ -636,22 +666,22 @@ footer .footer_div h2{
         border: 6px solid #f49231;
         height: 311px;
     }
-    
+
     .products .content .box:nth-child(2) {
         border: 6px solid #2377b8;
         height: 311px;
     }
-    
+
     .products .content .box:nth-child(3) {
         border: 6px solid #bf0811;
         height: 311px;
     }
-    
+
     .products .content .box:nth-child(4) {
         border: 6px solid #3eb24f;
         height: 311px;
     }
-    
+
     .products .content .box:nth-child(5) {
         border: 6px solid #65338d;
         height: 311px;
@@ -692,8 +722,26 @@ footer .footer_div h2{
         font-size: 2.2em;
         color: #fff;
     }
+
+    .banner .content p{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
 
+@media (max-width: 1920px){
+    .row .col50 .imgBx{
+        height: 400px;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 320px){
+    .formulario__mensaje{
+        height: 100px;
+    }
+}
 /*=============FOOTER STYLE=============*/
 footer{
     display: flex;
@@ -782,12 +830,4 @@ footer .footer_div p{
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 15px;
-}
-
-@media (max-width: 1920px){
-    .row .col50 .imgBx{
-        height: 400px;
-        width: 100%;
-        margin-top: 20px;
-    }
 }

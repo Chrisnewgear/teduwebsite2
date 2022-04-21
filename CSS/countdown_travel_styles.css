@@ -253,6 +253,36 @@ header .navigation li a:hover{
     color: #111;
 
 }
+
+/*========= WHATSAPP BUTTON =======*/
+.wsp-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.btn_wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    box-shadow: -1px 6px 14px 0px rgba(0,0,0,0.75);
+    transition: .3s;
+}
+
+.btn_wsp:hover{
+    background:#fff;
+    color: #0df053;
+    transform: translateY(-10px);
+}
 /*=======================MEDIA QUERIES=======================*/
 
 @media (max-width: 991px){
