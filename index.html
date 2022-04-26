@@ -188,56 +188,95 @@
 
     <section class="contact" id="contact">
         <div class="title">
-            <h2 class="titleText"><span>C</span>ontáctanos</h2>
-            <p>Suscríbete a nuestro lanzamiento de Ecuador</p>
+            <h2 class="titleText"><span>I</span>nscríbete</h2>
+            <p>Reserva tu asistencia para nuestro lanzamiento en Ecuador</p>
         </div>
-        <div class="contactForm">
-            <h3>Escríbenos</h3>
-            <div class="inputBox">
-                <input class="input-text" type="text" placeholder="Nombre completo*" required>
+
+        <form action="enviar.php" method="post" class="formulario" id="formulario">
+             <h3>Formulario de inscripción</h3>
+
+            <!-- GRUPO NOMBRE -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre y apellidos</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre completo*" >
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
             </div>
 
-            <div class="inputBox">
-                <input class="input-text" type="number" placeholder="Telefono*" required>
+            <!-- GRUPO TELEFONO -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario__input" id="telefono" name="telefono" placeholder="Teléfono*" >
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y máximo 10 dígitos</p>
             </div>
 
-            <div class="inputBox">
-                <input class="input-text" type="email" placeholder="Tu email*" required>
+
+            <!-- GRUPO CORREO -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Email</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario__input" id="correo" name="correo" placeholder="Email*" >
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                <p class="formulario__input-error">El correo solo puede tener letras, numeros, puntos, guiones, @ y guion bajo.</p>
             </div>
 
-            <div class="inputBox">
-                <input class="input-text" type="text" placeholder="ciudad*" required>
+            <!-- GRUPO MENSAJE -->
+            <div class="formulario__grupo" id="grupo__ciudad">
+                <label for="ciudad" class="formulario__label">Escríbenos</label>
+                    <div class="formulario_grupo-input">
+                        <textarea name="mensaje" id="mensaje" class="formulario__input" placeholder="Tu mensaje"></textarea>
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                <p class="formulario__input-error">La ciudad solo puede tener letras de la A a la Z y máximo 16 caracteres</p>
             </div>
-            <div class="inputBox">
-                <textarea class="input-text" placeholder="Mensaje opcional"></textarea>
-            </div>
-            <div class="inputBox">
-                <input type="submit" value="Enviar">
-            </div>
-        </div>
+
+            <!-- TERMINOS Y CONDICIONES -->
+			<div class="formulario__grupo-terminos" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"  value="">
+					<span>Acepto los Términos y Condiciones</span>
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fa-solid fa-triangle-exclamation"></i><b>Error: Por favor rellene el formulario correctamente y acepte los términos y condiciones</b></p>
+			</div>
+
+			<div class="formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn" id="btnSend">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+			</div>
+        </form>
     </section>
 
-<footer class="footer_animation">
-    <div class="footer_div">
-        <h2>SIGUENOS</h2>
-        <ul class="social_icon">
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://instagram.com/teduemprende?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://vm.tiktok.com/ZMLbk563e/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
-                <li><a href="https://twitter.com/teduemprende?s=11&t=N7YCkF_mR_ENq6fE_S2-Yg" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCvspja0TWwaihtZPA1lxRRg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-        </ul>
-        <ul class="menu">
-            <li><a href="#banner"><i class="fa-solid fa-arrow-up"></i></a></li>
-            <li><a href="#memberships">Membresías</a></li>
-            <li><a href="#products">Productos</a></li>
-            <li><a href="#about">Nosotros</a></li>
-            <li><a href="#testimonials">Nuestra Tribu</a></li>
-            <li><a href="#contact">Contáctanos</a></li>
-        </ul>
-        <p>Copyright &copy; 2022 TEDU | All Rights Reserved</p>
-    </div>
-</footer>
+
+    <footer class="footer_animation">
+        <div class="footer_div">
+            <h2>SIGUENOS</h2>
+            <ul class="social_icon">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/teduemprende?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://vm.tiktok.com/ZMLbk563e/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://twitter.com/teduemprende?s=11&t=N7YCkF_mR_ENq6fE_S2-Yg" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCvspja0TWwaihtZPA1lxRRg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#banner"><i class="fa-solid fa-arrow-up"></i></a></li>
+                <li><a href="#memberships">Membresías</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#testimonials">Nuestra Tribu</a></li>
+                <li><a href="#contact">Contáctanos</a></li>
+            </ul>
+            <p>Copyright &copy; 2022 TEDU | All Rights Reserved</p>
+        </div>
+    </footer>
     <script src="JS/script.js"></script>
     <!--<script src="JS/index.js"></script>-->
 </body>
