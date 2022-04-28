@@ -518,6 +518,12 @@ section{
 	position: relative;
 }
 
+.formulario_grupo-input .input__textarea{
+    resize: none;
+    height: 150px;
+    line-height: 15px;
+}
+
 .formulario__input{
     width: 100%;
     background: #fff;
@@ -528,6 +534,7 @@ section{
 	padding: 0 40px 0 10p;
 	transition: .3s ease all;
 }
+
 
 
 .formulario__input:focus{

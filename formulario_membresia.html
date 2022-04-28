@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validación de Formulario con Javascript</title>
+	<!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/estilos_formulario_menbresias.css">
+	<script src="https://kit.fontawesome.com/0854984c4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+        <a href="index.html" class="logo">TEDÜ</a>
+        <!-- <div class="menuToggle" onclick="toggleMenu()"></div> -->
+    </header>
+	<section class="contact" id="contact">
+		<div>
+			<div class="title">
+				<h2 class="titleText">Llena tus datos</h2>
+			<!--  <p>Reserva tu asistencia para nuestro lanzamiento en Ecuador</p> -->
+			</div>
+
+			<form action="enviar.php" method="post" class="formulario" id="formulario">
+				<!-- <h3>Formulario de inscripción</h3> -->
+
+				<!-- GRUPO NOMBRE -->
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label">Nombres y apellidos</label>
+						<div class="formulario_grupo-input">
+							<input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre completo*" >
+							<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+						</div>
+					<p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
+				</div>
+
+				<!-- GRUPO IDENTIFICACION -->
+				<div class="formulario__grupo" id="grupo__identificacion">
+					<label for="identificacion" class="formulario__label">N° de Identificación</label>
+						<div class="formulario_grupo-input">
+							<input type="text" class="formulario__input" id="identificacion" name="telefono" placeholder="N° de cédula o pasaporte" >
+							<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+						</div>
+					<p class="formulario__input-error">El telefono solo puede contener numeros y máximo 10 dígitos</p>
+				</div>
+
+
+				<!-- GRUPO CORREO -->
+				<div class="formulario__grupo" id="grupo__correo">
+					<label for="correo" class="formulario__label">Email</label>
+						<div class="formulario_grupo-input">
+							<input type="text" class="formulario__input" id="correo" name="correo" placeholder="Email*" >
+							<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+						</div>
+					<p class="formulario__input-error">El correo solo puede tener letras, numeros, puntos, guiones, @ y guion bajo.</p>
+				</div>
+
+				<!-- GRUPO CIUDAD -->
+				<div class="formulario__grupo" id="grupo__ciudad">
+					<label for="ciudad" class="formulario__label">Ciudad</label>
+						<div class="formulario_grupo-input">
+							<input type="text" class="formulario__input" id="ciudad" name="ciudad" placeholder="Tu ciudad*" >
+							<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+						</div>
+					<p class="formulario__input-error">La ciudad solo puede tener letras de la A a la Z y máximo 16 caracteres</p>
+				</div>
+
+				<!-- TERMINOS Y CONDICIONES -->
+				<div class="formulario__grupo-terminos" id="grupo__terminos">
+					<label class="formulario__label">
+						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"  value="">
+						<span>Acepto los Términos y Condiciones</span>
+					</label>
+				</div>
+
+				<div class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fa-solid fa-triangle-exclamation"></i><b>Error: Por favor rellene el formulario correctamente y acepte los términos y condiciones</b></p>
+				</div>
+
+				<div class="formulario__grupo-btn-enviar">
+					<button type="submit" class="formulario__btn" id="btnSend">Enviar</button>
+					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+				</div>
+			</form>
+    </section>
+	<footer class="footer_animation">
+        <div class="footer_div">
+            <h2>SIGUENOS</h2>
+            <ul class="social_icon">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/teduemprende?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://vm.tiktok.com/ZMLbk563e/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="https://twitter.com/teduemprende?s=11&t=N7YCkF_mR_ENq6fE_S2-Yg" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCvspja0TWwaihtZPA1lxRRg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="academy.html">TEDU Academy</a></li>
+                <li><a href="seguros.html">TEDU Seguros</a></li>
+                <li><a href="market.html">TEDU Market</a></li>
+                <li><a href="countdown_travel.html">TEDU Travel</a></li>
+                <li><a href="countdown_investment.html">TEDU Investment</a></li>
+            </ul>
+            <p>Copyright &copy; 2022 TEDU | All Rights Reserved</p>
+        </div>
+    </footer>
+	<script src="js/formulario_membresia.js"></script>
+	<script src="JS/script.js"></script>
+</body>
+</html>
