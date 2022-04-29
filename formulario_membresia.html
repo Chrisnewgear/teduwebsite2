@@ -15,74 +15,113 @@
         <!-- <div class="menuToggle" onclick="toggleMenu()"></div> -->
     </header>
 	<section class="contact" id="contact">
-		<div>
-			<div class="title">
-				<h2 class="titleText">Llena tus datos</h2>
-			<!--  <p>Reserva tu asistencia para nuestro lanzamiento en Ecuador</p> -->
+		<div class="form__title">
+			<h2>Formulario de inscripción</h2>
+		</div>
+
+		<form action="" class="form__1">
+			<!-- GRUPO USUARIO -->
+			<div class="container__usuario">
+				<div class="grupo__usuario">
+					<label for="usuario" class="formulario__usuario">Código de usuario</label>
+					<input type="text" class="usuario" name="usuario" id="usuario">
+				</div>
+				<div class="grupo__datos">
+					<label for="datos" class="titulo__grupo">Datos del solicitante</label>
+					<div class="grupo__datos-juridico">
+						<label for="p__juridica" class="label__value">Persona jurídica:</label>
+						<input type="text" class="input__datos" name="juridica" id="juridica">
+						<label for="ruc" class="label__value">RUC:</label>
+						<input type="number" class="input__datos" name="ruc" id="ruc">
+					</div>
+					<div class="grupo__datos-natural">
+						<label for="p__natural" class="label__value">Persona natural</label>
+						<input type="text" class="input__datos" name="natural" id="natural">
+					</div>
+				</div>
 			</div>
 
-			<form action="enviar.php" method="post" class="formulario" id="formulario">
-				<!-- <h3>Formulario de inscripción</h3> -->
+			<!-- GRUPO IDENTIFICACION -->
+			<div class="container__identificacion">
+				<label for="nombre" class="titulo__grupo">A. Identificación</label>
+				<div class="grupo__datos-nombre">
+					<label for="apellido__1" class="label__value">Apellido Paterno</label>
+					<input type="text" class="input__datos" name="paterno" id="paterno">
 
-				<!-- GRUPO NOMBRE -->
-				<div class="formulario__grupo" id="grupo__nombre">
-					<label for="nombre" class="formulario__label">Nombres y apellidos</label>
-						<div class="formulario_grupo-input">
-							<input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre completo*" >
-							<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-						</div>
-					<p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
+					<label for="apellido__2" class="label__value">Apellido Materno</label>
+					<input type="text" class="input__datos" name="materno" id="materno">
+					
+					<label for="nombre" class="label__value">Nombres</label>
+					<input type="text" class="input__datos" name="nombres" id="nombres">
 				</div>
-
-				<!-- GRUPO IDENTIFICACION -->
-				<div class="formulario__grupo" id="grupo__identificacion">
-					<label for="identificacion" class="formulario__label">N° de Identificación</label>
-						<div class="formulario_grupo-input">
-							<input type="text" class="formulario__input" id="identificacion" name="telefono" placeholder="N° de cédula o pasaporte" >
-							<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-						</div>
-					<p class="formulario__input-error">El telefono solo puede contener numeros y máximo 10 dígitos</p>
+				<div class="grupo__datos-tipoId">
+					<input type="checkbox" class="pasaporte" name="pasaporte" id="pasaporte">
+					<label for="pasaporte" class="pasaporte">Pasaporte</label>
+					<input type="checkbox" class="cedula" name="cedula" id="cedula">
+					<label for="cedula" class="cedula">Cédula</label>
 				</div>
-
-
-				<!-- GRUPO CORREO -->
-				<div class="formulario__grupo" id="grupo__correo">
-					<label for="correo" class="formulario__label">Email</label>
-						<div class="formulario_grupo-input">
-							<input type="text" class="formulario__input" id="correo" name="correo" placeholder="Email*" >
-							<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-						</div>
-					<p class="formulario__input-error">El correo solo puede tener letras, numeros, puntos, guiones, @ y guion bajo.</p>
+				<div class="grupo__datos-date">
+					<label for="fecha" class="fecha">Fecha de nacimiento:</label>
+					<input type="date" for="fecha" name="fecha" id="fecha">
 				</div>
-
-				<!-- GRUPO CIUDAD -->
-				<div class="formulario__grupo" id="grupo__ciudad">
-					<label for="ciudad" class="formulario__label">Ciudad</label>
-						<div class="formulario_grupo-input">
-							<input type="text" class="formulario__input" id="ciudad" name="ciudad" placeholder="Tu ciudad*" >
-							<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-						</div>
-					<p class="formulario__input-error">La ciudad solo puede tener letras de la A a la Z y máximo 16 caracteres</p>
+				<div class="grupo__datos-provincia">
+					<label for="provincia" class="provincia">Provincia:</label>
+					<input type="text" for="provincia" name="provincia" id="provincia">
+					<label for="ciudad" class="ciudad">Ciudad:</label>
+					<input type="text" for="ciudad" name="ciudad" id="ciudad">
 				</div>
-
-				<!-- TERMINOS Y CONDICIONES -->
-				<div class="formulario__grupo-terminos" id="grupo__terminos">
-					<label class="formulario__label">
-						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"  value="">
-						<span>Acepto los Términos y Condiciones</span>
-					</label>
+				<div class="grupo__datos-direccion">
+					<label for="direccion" class="direccion">Dirección domiciliaria:</label>
+					<input type="text" for="direccion" name="direccion" id="direccion">
 				</div>
-
-				<div class="formulario__mensaje" id="formulario__mensaje">
-					<p><i class="fa-solid fa-triangle-exclamation"></i><b>Error: Por favor rellene el formulario correctamente y acepte los términos y condiciones</b></p>
+				<div class="grupo__datos-celular">
+					<label for="celular" class="celular">Celular:</label>
+					<input type="number" for="celular" name="celular" id="celular">
 				</div>
-
-				<div class="formulario__grupo-btn-enviar">
-					<button type="submit" class="formulario__btn" id="btnSend">Enviar</button>
-					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+				<div class="grupo__datos-telefono">
+					<label for="telefono" class="telefono">Teléfono:</label>
+					<input type="number" for="telefono" name="telefono" id="telefono">
 				</div>
-			</form>
-    </section>
+				<div class="grupo__datos-mail">
+					<label for="email" class="email">Email:</label>
+					<input type="email" for="email" name="email" id="email">
+				</div>
+				<div class="grupo__datos-checkboxMail">
+					<p>¿Acepto recibir la información relacionada con la red de mercadeo TEDU en la dirección de correo suminstrada?</p>
+					<input type="checkbox" class="si" name="si" id="si">
+					<label for="checkboxMail" class="checkboxMail">Si</label>
+					<input type="checkbox" class="no" name="no" id="no">
+					<label for="checkboxMail" class="checkboxMail">No</label>
+				</div>
+				<div class="grupo__datos-cuentaBanco">
+					<label for="cuenta" class="cuentaBanco">Cuenta bancaria:</label>
+					<input type="number" for="cuenta" name="cuenta" id="cuenta">
+				</div>
+				<div class="grupo__datos-tipoCuenta">
+					<input type="checkbox" class="ahorros" name="ahorros" id="ahorros">
+					<label for="checkboxCuentaAhorros" class="checkboxCuentaAhorros">Ahorros</label>
+					<input type="checkbox" class="corriente" name="corriente" id="corriente">
+					<label for="checkboxCuentaCorriente" class="checkboxCuentaCorriente">Corriente</label>
+				</div>
+				<div class="grupo__datos-banco">
+					<label for="banco" class="banco">Banco</label>
+					<input type="text" for="banco" name="banco" id="banco">
+				</div>
+			</div>
+			<!-- GRUPO PATROINADOR -->
+			<div class="container__patrocinador">
+				<label for="patrocinador" class="titulo__grupo">B. Datos del patrocinador</label>
+				<div class="grupo__datos-patrocinador">
+					<label for="apellido__paterno" class="apellido__paterno">Apellido Paterno</label>
+					<input type="text" class="input__datos" name="paterno__patrocinador" id="paterno__patrocinador">
+					<label for="apellido__materno" class="apellido__materno">Apellido Materno</label>
+					<input type="text" class="input__datos" name="materno" id="materno">
+					<label for="nombre" class="label__value">Nombres</label>
+					<input type="text" class="input__datos" name="nombres" id="nombres">
+				</div>
+			</div>
+		</form>
+	</section>
 	<footer class="footer_animation">
         <div class="footer_div">
             <h2>SIGUENOS</h2>

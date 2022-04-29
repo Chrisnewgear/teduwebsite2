@@ -18,7 +18,7 @@ const campos = {
 }
 
 const validarFormulario = (e) => {
-	switch (e.target.name) {
+	switch (e.target.name)
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
 		break;
