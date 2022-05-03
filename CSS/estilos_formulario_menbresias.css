@@ -59,6 +59,9 @@ header .logo span{
     justify-content: center;
 }
 
+.formulario__membresia{
+    margin: 50px  100px;
+}
 
 
 footer .footer_div h2{
@@ -93,6 +96,7 @@ footer .footer_div h2{
     color: #0df053;
     transform: translateY(-10px);
 }
+
 
 
 /*=======================MEDIA QUERIES=======================*/
