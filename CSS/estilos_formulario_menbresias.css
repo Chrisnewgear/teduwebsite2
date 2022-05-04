@@ -63,6 +63,221 @@ header .logo span{
     margin: 50px  100px;
 }
 
+.grupo__usuario{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.grupo__usuario input{
+    border-radius: 5px;
+    border: 1px solid #111;
+    height: 30px;
+    line-height: 30px;
+}
+
+.titulo__grupo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    background: #e12a4c;
+    color: #fff;
+    height: 45px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    margin-bottom: 12px;
+    /* margin-top: 12px; */
+}
+
+.input__datos-juridico,
+.input__datos-natural{
+    width: 340px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    height: 30px;
+    line-height: 30px;
+}
+
+.input__datos-ruc{
+    border-radius: 5px;
+    border: 1px solid #111;
+    height: 30px;
+    line-height: 30px;
+}
+
+.grupo__datos,
+.grupo__indetificacion,
+.grupo__patrocinador{
+    /* border: 1px solid #111; */
+    border-radius: 12px;
+    margin: 20px 20px;
+    display: block;
+    align-content: center;
+    border-radius: 50px;
+    border-radius: 50px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset -20px -20px 60px #bebebe,
+            inset 20px 20px 60px #ffffff;
+}
+
+.grupo__datos-juridico,
+.grupo__datos-natural{
+    padding: 10px 30px;
+}
+
+.grupo__datos-juridico {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grupo__datos-natural{
+    margin-left: 115px;
+    margin-bottom: 10px;
+}
+
+.grupo__identificacion-nombre{
+    padding: 10px 30px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 35px;
+    align-items: center;
+}
+
+.grupo__identificacion-nombre .input__datos{
+    border-radius: 5px;
+    border: 1px solid #111;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.grupo__identificacion-tipoId{
+    padding: 10px 30px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 40px;
+    align-items: center;
+}
+
+.num__pasaporte,
+.num__cedula,
+.nacimiento,
+.provincia,
+.ciudad{
+    /* width: 300px; */
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    height: 30px;
+    line-height: 30px;
+}
+
+.nacimiento{
+    width: 180px;
+}
+
+.grupo__identificacion-direccion{
+    padding: 10px 30px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin: 10px 35px;
+    align-items: center;
+}
+
+.direccion,
+.celular,
+.telefono,
+.email{
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    height: 30px;
+    line-height: 30px;
+}
+
+.direccion{
+    width: 340px;
+}
+
+.grupo__identificacion-radioMail{
+    padding: 10px 30px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin: 10px 35px;
+    align-items: center;
+}
+
+.grupo__identificacion-radioMail p{
+    font-weight: 800;
+}
+
+.grupo__identificacion-cuenta{
+    padding: 10px 30px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+    align-items: center;
+}
+
+.cuenta,
+.ctaBanco{
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    height: 30px;
+    line-height: 30px;
+}
+
+.grupo__patrocinador-nombre,
+.grupo__patrocinador-contacto{
+    padding: 10px 30px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 35px;
+    align-items: center;
+}
+
+
+.patrocinador__paterno,
+.patrocinador__materno,
+.nombre__patrocinador,
+.celular-patrocinador,
+.telefono__patrocinador,
+.codigo__patrocinador,
+.fecha__solicitud{
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.grupo__datos-date{
+    padding: 10px 30px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin: 10px 35px;
+    align-items: center;
+}
+
+
+
+
+
+
+
 
 footer .footer_div h2{
     color: #fff;

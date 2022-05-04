@@ -34,24 +34,24 @@
 				<div class="grupo__datos">
 					<label for="datos" class="titulo__grupo">Datos del solicitante</label>
 
-					<div class="grupo__datos-juridico">
-						<label for="juridica" class="input__title">
-							<span>Persona jurídica:</span>
-							<input type="text" class="input__datos" name="juridica" id="juridica">
-						</label>
+						<div class="grupo__datos-juridico">
+							<label for="juridica" class="input__title">
+								<span>Persona jurídica:</span>
+								<input type="text" class="input__datos-juridico" name="juridica" id="juridica">
+							</label>
 
-						<label for="ruc" class="input__title">
-							<span>RUC:</span>
-							<input type="number" class="input__datos" name="ruc" id="ruc">
-						</label>
-					</div>
+							<label for="ruc" class="input__title">
+								<span>RUC:</span>
+								<input type="number" class="input__datos-ruc" name="ruc" id="ruc">
+							</label>
+						</div>
 
-					<div class="grupo__datos-natural">
-						<label for="natural" class="input__title">
-							<span>Persona natural:</span>
-							<input type="text" class="input__datos" name="natural" id="natural">
-						</label>
-					</div>
+						<div class="grupo__datos-natural">
+							<label for="natural" class="input__title">
+								<span>Persona natural:</span>
+								<input type="text" class="input__datos-natural" name="natural" id="natural">
+							</label>
+						</div>
 				</div>
 			</div>
 
@@ -80,102 +80,116 @@
 
 					<div class="grupo__identificacion-tipoId">
 						<label for="pasaporte" class="input__title">
-							<input type="checkbox" class="pasaporte" name="pasaporte" id="pasaporte">
+							<input type="radio" class="pasaporte" name="pasaporte" id="pasaporte">
 							<span>Pasaporte:</span>
 							<input type="number" class="num__pasaporte" name="num__pasaporte" id="num__pasaporte">
 						</label>
 
 						<label for="cedula" class="input__title">
-							<input type="checkbox" class="cedula" name="cedula" id="cedula">
+							<input type="radio" class="cedula" name="cedula" id="cedula">
 							<span>Cédula:</span>
 							<input type="number" class="num__cedula" name="num__cedula" id="num__cedula">
 						</label>
-					</div>
 
-					<div class="grupo__identificacion-nacimiento">
 						<label for="date" class="input__title">
 							<span>Fecha de nacimiento:</span>
-							<input type="date" name="nacimiento" id="nacimiento">
+							<input type="date" class="nacimiento" name="nacimiento" id="nacimiento">
 						</label>
-					</div>
 
-					<div class="grupo__identificacion-provincia">
 						<label for="provincia" class="input__title">
 							<span>Provincia:</span>
-							<input type="text" name="provincia" id="provincia">
+							<input type="text" class="provincia" name="provincia" id="provincia">
 						</label>
 
 						<label for="ciudad" class="input__title">
 							<span>Ciudad:</span>
-							<input type="text" name="ciudad" id="ciudad">
+							<input type="text" class="ciudad" name="ciudad" id="ciudad">
 						</label>
 					</div>
+
+					<!-- <div class="grupo__identificacion-nacimiento">
+						<label for="date" class="input__title">
+							<span>Fecha de nacimiento:</span>
+							<input type="date" name="nacimiento" id="nacimiento">
+						</label>
+					</div> -->
+
+					<!-- <div class="grupo__identificacion-provincia"> -->
+						<!-- <label for="provincia" class="input__title">
+							<span>Provincia:</span>
+							<input type="text" name="provincia" id="provincia">
+						</label> -->
+
+						<!-- <label for="ciudad" class="input__title">
+							<span>Ciudad:</span>
+							<input type="text" name="ciudad" id="ciudad">
+						</label> -->
+					<!-- </div> -->
 
 					<div class="grupo__identificacion-direccion">
 						<label for="direccion" class="input__title">
 							<span>Dirección domiciliaria:</span>
-							<input type="text" name="direccion" id="direccion">
+							<input type="text" class="direccion" name="direccion" id="direccion">
+						</label>
+
+						<label for="celular" class="input__title">
+							<span>Celular:</span>
+							<input type="tel"class="celular" name="celular" id="celular">
+						</label>
+
+						<label for="telefono" class="input__title">
+							<span>Teléfono:</span>
+							<input type="tel"class="telefono" name="telefono" id="telefono">
+						</label>
+
+						<label for="email" class="input__title">
+							<span>Email:</span>
+							<input type="email"class="email" name="email" id="email">
 						</label>
 					</div>
 
-					<div class="grupo__identificacion-celular">
-						<label for="celular" class="input__title">
-							<span>Celular:</span>
-							<input type="number" name="celular" id="celular">
-						</label>
+				<!-- 	<div class="grupo__identificacion-celular">
 					</div>
 
 					<div class="grupo__identificacion-telefono">
-						<label for="telefono" class="input__title">
-							<span>Teléfono:</span>
-							<input type="number" name="telefono" id="telefono">
-						</label>
 					</div>
 
 					<div class="grupo__identificacion-mail">
-						<label for="email" class="input__title">
-							<span>Email:</span>
-							<input type="email" name="email" id="email">
-						</label>
-					</div>
+					</div> -->
 
-					<div class="grupo__identificacion-checkboxMail">
+					<div class="grupo__identificacion-radioMail">
 						<p>¿Acepto recibir la información relacionada con la red de mercadeo TEDU en la dirección de correo suminstrada?</p>
 
-						<label for="checkboxMailSi" class="input__title">
-							<input type="checkbox" class="checkboxMailSi" name="checkboxMailSi" id="checkboxMailSi">
+						<label for="radioSi" class="input__title">
 							<span>Si</span>
+							<input type="radio" class="checkboxMailSi" name="checkboxMailSi" id="checkboxMailSi">
 						</label>
 
-						<label for="checkboxMailNo" class="input__title">
-							<input type="checkbox" class="checkboxMailNo" name="checkboxMailNo" id="checkboxMailNo">
+						<label for="radioNo" class="input__title">
 							<span>No</span>
+							<input type="radio" class="checkboxMailNo" name="checkboxMailNo" id="checkboxMailNo">
 						</label>
 					</div>
 
-					<div class="grupo__identificacion-cuentaBanco">
+					<div class="grupo__identificacion-cuenta">
 						<label for="cuenta" class="input__title">
 							<span>Cuenta bancaria:</span>
-							<input type="number" name="cuenta" id="cuenta">
+							<input type="number" class="cuenta" name="cuenta" id="cuenta">
 						</label>
-					</div>
 
-					<div class="grupo__identificacion-tipoCuenta">
 						<label for="ahorros" class="input__title">
-							<input type="checkbox" class="ahorros" name="ahorros" id="ahorros">
+							<input type="radio" class="ahorros" name="ahorros" id="ahorros">
 							<span>Ahorros:</span>
 						</label>
 
 						<label for="corriente" class="input__title">
-							<input type="checkbox" class="corriente" name="corriente" id="corriente">
+							<input type="radio" class="corriente" name="corriente" id="corriente">
 							<span>Corriente:</span>
 						</label>
-					</div>
 
-					<div class="grupo__identificacion-banco">
 						<label for="banco" class="banco">
 							<span>Banco:</span>
-							<input type="text" name="banco" id="banco">
+							<input type="text" class="ctaBanco" name="banco" id="banco">
 						</label>
 					</div>
 				</div>
@@ -189,40 +203,40 @@
 					<div class="grupo__patrocinador-nombre">
 						<label for="paterno__patrocinador" class="input__title">
 							<span>Apellido Paterno:</span>
-							<input type="text" class="input__datos" name="patrocinador__paterno" id="patrocinador__paterno">
+							<input type="text" class="patrocinador__paterno" name="patrocinador__paterno" id="patrocinador__paterno">
 						</label>
 
 						<label for="materno__patrocinador" class="input__title">
 							<span>Apellido Materno:</span>
-							<input type="text" class="input__datos" name="patrocinador__materno" id="patrocinador__materno">
+							<input type="text" class="patrocinador__materno" name="patrocinador__materno" id="patrocinador__materno">
 						</label>
 
 						<label for="nombre__patrocinador" class="input__title">
 							<span>Nombres:</span>
-							<input type="text" class="input__datos" name="nombre__patrocinador" id="nombre__patrocinador">
+							<input type="text" class="nombre__patrocinador" name="nombre__patrocinador" id="nombre__patrocinador">
 						</label>
 					</div>
 
 					<div class="grupo__patrocinador-contacto">
 						<label for="celular__patrocinador" class="input__title">
 							<span>Celular:</span>
-							<input type="number" name="celular-patrocinador" id="celular-patrocinador">
+							<input type="number" class="celular-patrocinador" name="celular-patrocinador" id="celular-patrocinador">
 						</label>
 
 						<label for="telefono__patrocinador" class="input__title">
 							<span>Telefóno:</span>
-							<input type="number" name="telefono__patrocinador" id="telefono__patrocinador">
+							<input type="number" class="telefono__patrocinador" name="telefono__patrocinador" id="telefono__patrocinador">
 						</label>
 
 						<label for="codigo__patrocinador" class="input__title">
 							<span>Código de Usuario:</span>
-							<input type="number" name="codigo__patrocinador" id="codigo__patrocinador">
+							<input type="number" class="codigo__patrocinador" name="codigo__patrocinador" id="codigo__patrocinador">
 						</label>
 					</div>
 
 					<div class="grupo__datos-date">
 						<label for="fecha" class="fecha">Fecha de solicitud:</label>
-						<input type="date" for="fecha-de-solicitud" name="fecha-de-solicitud" id="fecha">
+						<input type="date" class="fecha__solicitud" name="fecha__solicitud" id="fecha__solicitud">
 					</div>
 				</div>
 			</div>
