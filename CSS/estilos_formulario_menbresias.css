@@ -124,19 +124,23 @@ header .logo span{
             inset 20px 20px 60px #ffffff;
 }
 
+
 .grupo__datos-juridico,
 .grupo__datos-natural{
-    padding: 10px 30px;
+    padding: 20px 30px;
 }
 
 .grupo__datos-juridico {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .grupo__datos-natural{
-    margin-left: 115px;
-    margin-bottom: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 66%;
 }
 
 .grupo__identificacion-nombre{
@@ -226,6 +230,7 @@ header .logo span{
     justify-content: space-between;
     margin: 10px 40px;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .cuenta,
@@ -270,14 +275,25 @@ header .logo span{
     justify-content: center;
     margin: 10px 35px;
     align-items: center;
+    padding-bottom: 30px;
 }
 
+/*DESACTIVA SPINNERS DE LOS INPUT NUMBER*/
+input[type=number]::-webkit-outer-spin-button,
 
+input[type=number]::-webkit-inner-spin-button {
 
+    -webkit-appearance: none;
 
+    margin: 0;
 
+}
 
+input[type=number] {
 
+    -moz-appearance:textfield;
+
+}
 
 footer .footer_div h2{
     color: #fff;
@@ -351,18 +367,59 @@ footer .footer_div h2{
         padding: 20px;
     }
 
-	.contact .title h2{
-		width: 100%;
-	}
-    .contactForm{
-        padding: 35px 40px;
-        margin-top: 20px;
-        margin-bottom: 30px;
+    .formulario__membresia{
+       margin: 50px 0;
     }
 
-    .formulario__mensaje{
-        height: 85px;
+	.grupo__datos,
+    .grupo__indetificacion,
+    .grupo__patrocinador{
+        margin-left: 0;
+        margin-right: 0;
+
     }
+
+    .grupo__datos-juridico .input__title{
+        margin: 15px auto;
+    }
+
+    .grupo__datos-juridico,
+    .grupo__datos-natural,
+    .grupo__identificacion-nombre,
+    .grupo__identificacion-tipoId,
+    .grupo__identificacion-direccion,
+    .grupo__identificacion-radioMail,
+    .grupo__identificacion-cuenta{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+        flex-wrap: wrap;
+    }
+
+   /*  .grupo__datos-juridico,
+    .grupo__datos-natural{
+        padding: 0px 30px 30px 30px;
+    } */
+
+    .grupo__datos-juridico{
+        padding: 0px 30px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .grupo__datos-natural{
+        padding: 0px 30px 30px 30px;
+        margin-top: 0;
+    }
+
+    .grupo__patrocinador-nombre,
+    .grupo__patrocinador-contacto{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (max-width: 320px){
