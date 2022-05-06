@@ -83,16 +83,13 @@
 					</div>
 
 					<div class="grupo__identificacion-tipoId">
-						<label for="pasaporte" class="input__title">
-							<input type="radio" class="pasaporte" name="pasaporte" id="pasaporte">
-							<span>Pasaporte:</span>
-							<input type="number" class="num__pasaporte" name="num__pasaporte" id="num__pasaporte">
-						</label>
-
-						<label for="cedula" class="input__title">
-							<input type="radio" class="cedula" name="cedula" id="cedula">
-							<span>Cédula:</span>
-							<input type="number" class="num__cedula" name="num__cedula" id="num__cedula">
+						<label for="tipo__identificacion" class="input__title">
+							<span>Identificación</span>
+							<select class="tipo__identificacion" name="tipo__identificacion" id="tipo__identificacion">
+								<option value="Pasaporte">Pasaporte</option>
+								<option value="Cédula">Cédula</option>
+							</select>
+							<input type="number" class="num__identificacion" name="num__identificacion" id="num__identificacion">
 						</label>
 
 						<label for="date" class="input__title">
@@ -110,25 +107,6 @@
 							<input type="text" class="ciudad" name="ciudad" id="ciudad">
 						</label>
 					</div>
-
-					<!-- <div class="grupo__identificacion-nacimiento">
-						<label for="date" class="input__title">
-							<span>Fecha de nacimiento:</span>
-							<input type="date" name="nacimiento" id="nacimiento">
-						</label>
-					</div> -->
-
-					<!-- <div class="grupo__identificacion-provincia"> -->
-						<!-- <label for="provincia" class="input__title">
-							<span>Provincia:</span>
-							<input type="text" name="provincia" id="provincia">
-						</label> -->
-
-						<!-- <label for="ciudad" class="input__title">
-							<span>Ciudad:</span>
-							<input type="text" name="ciudad" id="ciudad">
-						</label> -->
-					<!-- </div> -->
 
 					<div class="grupo__identificacion-direccion">
 						<label for="direccion" class="input__title">
@@ -152,15 +130,6 @@
 						</label>
 					</div>
 
-				<!-- 	<div class="grupo__identificacion-celular">
-					</div>
-
-					<div class="grupo__identificacion-telefono">
-					</div>
-
-					<div class="grupo__identificacion-mail">
-					</div> -->
-
 					<div class="grupo__identificacion-radioMail">
 						<p>¿Acepto recibir la información relacionada con la red de mercadeo TEDU en la dirección de correo suminstrada?</p>
 
@@ -176,24 +145,18 @@
 					</div>
 
 					<div class="grupo__identificacion-cuenta">
-						<label for="cuenta" class="input__title">
-							<span>Cuenta bancaria:</span>
-							<input type="number" class="cuenta" name="cuenta" id="cuenta">
+						<label for="tipo__cuenta" class="input__title">
+							<span>Cuenta bancaria</span>
+							<select class="tipo__cuenta" name="tipo__cuenta" id="tipo__cuenta">
+								<option value="Pasaporte">Ahorros</option>
+								<option value="Cédula">Corriente</option>
+							</select>
+							<input type="number" class="num__cuenta" name="num__cuenta" id="num__cuenta">
 						</label>
 
-						<label for="ahorros" class="input__title">
-							<input type="radio" class="ahorros" name="ahorros" id="ahorros">
-							<span>Ahorros:</span>
-						</label>
-
-						<label for="corriente" class="input__title">
-							<input type="radio" class="corriente" name="corriente" id="corriente">
-							<span>Corriente:</span>
-						</label>
-
-						<label for="banco" class="banco">
+						<label for="banco" class="input__title">
 							<span>Banco:</span>
-							<input type="text" class="ctaBanco" name="banco" id="banco">
+							<input type="text" class="cta__banco" name="banco" id="banco">
 						</label>
 					</div>
 				</div>
@@ -243,6 +206,9 @@
 						<input type="date" class="fecha__solicitud" name="fecha__solicitud" id="fecha__solicitud">
 					</div>
 				</div>
+			</div>
+			<div class="btn__container">
+				<input type="submit" value="Aceptar" class="btn">
 			</div>
 		</form>
 	</section>

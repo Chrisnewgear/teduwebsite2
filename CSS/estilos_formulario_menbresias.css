@@ -85,8 +85,8 @@ header .logo span{
     background: #e12a4c;
     color: #fff;
     height: 45px;
-    border-top-left-radius: 70px;
-    border-top-right-radius: 70px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
     margin-bottom: 12px;
     /* margin-top: 12px; */
 }
@@ -116,12 +116,21 @@ header .logo span{
     margin: 20px 20px;
     display: block;
     align-content: center;
-    border-radius: 50px;
-    border-radius: 50px;
-    border-radius: 50px;
+    /* border-radius: 50px;
     background: #e0e0e0;
     box-shadow: inset -20px -20px 60px #bebebe,
-            inset 20px 20px 60px #ffffff;
+            inset 20px 20px 60px #ffffff; */
+
+    /* border-radius: 32px;
+       background: #e0e0e0;
+       box-shadow:  24px 24px 48px #9f9f9f,
+                    -24px -24px 48px #ffffff; */
+
+    border-radius: 32px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  24px 24px 48px #9f9f9f,
+                -24px -24px 48px #ffffff;
+
 }
 
 
@@ -143,12 +152,12 @@ header .logo span{
     width: 66%;
 }
 
-.grupo__identificacion-nombre{
+.grupo__identificacion-nombre,
+.grupo__identificacion-tipoId{
     padding: 10px 30px;
     /* width: 100%; */
     display: flex;
-    justify-content: space-evenly;
-    margin: 10px 35px;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -159,27 +168,17 @@ header .logo span{
     line-height: 30px;
 }
 
-
-.grupo__identificacion-tipoId{
-    padding: 10px 30px;
-    /* width: 100%; */
+.grupo__identificacion-tipoId .input__title,
+.grupo__identificacion-cuenta .input__title{
     display: flex;
-    justify-content: space-evenly;
-    margin: 10px 40px;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
 }
 
-.num__pasaporte,
-.num__cedula,
-.nacimiento,
-.provincia,
-.ciudad{
-    /* width: 300px; */
-    margin-right: 20px;
-    border-radius: 5px;
-    border: 1px solid #111;
-    height: 30px;
-    line-height: 30px;
+.input__title .num__identificacion,
+.input__title .num__cuenta{
+    width: 205px;
 }
 
 .nacimiento{
@@ -195,10 +194,15 @@ header .logo span{
     align-items: center;
 }
 
+.nacimiento,
+.provincia,
+.ciudad,
 .direccion,
 .celular,
 .telefono,
-.email{
+.email,
+.tipo__identificacion,
+.num__identificacion{
     margin-right: 20px;
     border-radius: 5px;
     border: 1px solid #111;
@@ -227,14 +231,20 @@ header .logo span{
     padding: 10px 30px;
     /* width: 100%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 10px 40px;
     align-items: center;
     padding-bottom: 30px;
 }
 
-.cuenta,
-.ctaBanco{
+.grupo__identificacion-cuenta{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tipo__cuenta,
+.num__cuenta,
+.cta__banco{
     margin-right: 20px;
     border-radius: 5px;
     border: 1px solid #111;
@@ -277,6 +287,33 @@ header .logo span{
     align-items: center;
     padding-bottom: 30px;
 }
+
+.btn__container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    font-size: 1em;
+    color:#fff;
+    background: #e12a4c;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .3s;
+    box-shadow: 7px 6px 14px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.07);
+}
+
 
 /*DESACTIVA SPINNERS DE LOS INPUT NUMBER*/
 input[type=number]::-webkit-outer-spin-button,
@@ -376,7 +413,6 @@ footer .footer_div h2{
     .grupo__patrocinador{
         margin-left: 0;
         margin-right: 0;
-
     }
 
     .grupo__datos-juridico .input__title{
@@ -396,11 +432,6 @@ footer .footer_div h2{
         flex-wrap: wrap;
     }
 
-   /*  .grupo__datos-juridico,
-    .grupo__datos-natural{
-        padding: 0px 30px 30px 30px;
-    } */
-
     .grupo__datos-juridico{
         padding: 0px 30px;
         margin-bottom: 0;
@@ -418,6 +449,32 @@ footer .footer_div h2{
         flex-direction: column;
         margin: auto;
         flex-wrap: wrap;
+    }
+
+
+     .grupo__identificacion-nombre .input__title,
+     .grupo__identificacion-tipoId .input__title,
+     .grupo__identificacion-direccion .input__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .input__title .input__datos,
+    .input__title .provincia,
+    .input__title .ciudad,
+    .input__title .tipo__identificacion,
+    .input__title .num__identificacion,
+    .input__title .nacimiento,
+    .input__title .celular,
+    .input__title .telefono,
+    .input__title .email,
+    .input__title .tipo__cuenta,
+    .input__title .num__cuenta,
+    .input__title .cta__banco{
+        width: 340px;
     }
 
 }
