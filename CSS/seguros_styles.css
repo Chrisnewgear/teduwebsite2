@@ -339,6 +339,12 @@ footer .footer_div p{
     font-size: 15px;
 }
 
+footer .terminos{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 /*=======================MEDIA QUERIES=======================*/
 
 @media (max-width: 991px){

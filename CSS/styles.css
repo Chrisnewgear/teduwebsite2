@@ -1007,3 +1007,9 @@ footer .footer_div p{
     margin-bottom: 10px;
     font-size: 15px;
 }
+
+footer .terminos{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
