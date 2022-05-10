@@ -517,12 +517,6 @@ section{
 	position: relative;
 }
 
-.formulario_grupo-input .input__textarea{
-    resize: none;
-    height: 150px;
-    line-height: 15px;
-}
-
 .formulario__input{
     width: 100%;
     background: #fff;
@@ -535,6 +529,7 @@ section{
 }
 
 
+.formulario__grupo .formulario
 
 .formulario__input:focus{
 	border: 3px solid #0075FF;
@@ -1006,10 +1001,4 @@ footer .footer_div p{
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 15px;
-}
-
-footer .terminos{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
 }

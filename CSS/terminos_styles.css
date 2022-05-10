@@ -59,10 +59,7 @@ header .logo span{
 .first__paragraph,
 .terms__conditions,
 .final__paragraph{
-    width: 75%;
-    /* display: flex;
-    justify-content: flex-start; */
-    margin: 20px 160px;
+    margin: 20px 300px;
     text-align: left;
 }
 
@@ -223,10 +220,13 @@ footer .footer_div p{
     font-size: 15px;
 }
 
-@media (max-width: 1920px){
-    .row .col50 .imgBx{
-        height: 400px;
-        width: 100%;
-        margin-top: 20px;
+/*=============MEDIA QUERIES=============*/
+
+@media (max-width: 991px){
+    .first__paragraph,
+    .terms__conditions,
+    .final__paragraph{
+        margin: 20px 50px;
+        text-align: left;
     }
 }
