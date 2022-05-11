@@ -49,6 +49,34 @@ header .logo span{
     color: #e12a4c;
 }
 
+.validation__container{
+    margin: 80px 150px;
+}
+
+.subscribtion__validation h2,
+.subscribtion__validation h3{
+    text-align: center;
+}
+
+.step__list{
+    margin-left: 50px;
+}
+
+.step__list li a{
+    background: #e12a4c;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #111;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 2px 5px 14px 0px rgba(0,0,0,0.75);
+}
+
+.step__list li a:hover{
+    transform: translateY(5px);   
+}
 
 /*===============CONTACT FORM==================*/
 
