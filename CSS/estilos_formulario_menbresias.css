@@ -442,7 +442,7 @@ footer .footer_div h2{
         flex-direction: column;
         margin: 20px 20px;
         flex-wrap: wrap;
-        background: #0df053;
+        /* background: #0df053; */
     }
 
     .grupo__datos-juridico,
