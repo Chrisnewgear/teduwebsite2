@@ -261,15 +261,10 @@ header .logo span{
     padding: 10px 30px;
     /* width: 100%; */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 10px 40px;
     align-items: center;
     padding-bottom: 30px;
-}
-
-.grupo__identificacion-cuenta{
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .tipo__cuenta,
@@ -285,18 +280,19 @@ header .logo span{
 .grupo__patrocinador-nombre,
 .grupo__patrocinador-contacto{
     padding: 10px 30px;
-    /* width: 100%; */
     display: flex;
-    justify-content: space-between;
-    margin: 10px 35px;
+    flex-direction: row;
+    /* justify-content: space-between; */
     align-items: center;
+    margin: 10px 35px;
+    padding-bottom: 30px;
 }
 
 
 .patrocinador__paterno,
 .patrocinador__materno,
 .nombre__patrocinador,
-.celular-patrocinador,
+.celular__patrocinador,
 .telefono__patrocinador,
 .codigo__patrocinador,
 .fecha__solicitud{
@@ -305,17 +301,6 @@ header .logo span{
     border: 1px solid #111;
     height: 30px;
     line-height: 30px;
-}
-
-
-.grupo__datos-date{
-    padding: 10px 30px;
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-    margin: 10px 35px;
-    align-items: center;
-    padding-bottom: 30px;
 }
 
 .btn__container{
@@ -455,7 +440,9 @@ footer .footer_div h2{
     .grupo__identificacion-tipoId,
     .grupo__identificacion-direccion,
     .grupo__identificacion-radioMail,
-    .grupo__identificacion-cuenta{
+    .grupo__identificacion-cuenta,
+    .grupo__patrocinador-nombre,
+    .grupo__patrocinador-contacto{
         display: flex;
         flex-direction: column;
         margin: 20px 20px;
@@ -473,18 +460,8 @@ footer .footer_div h2{
         margin-top: 0;
     }
 
-    .grupo__patrocinador-nombre,
-    .grupo__patrocinador-contacto{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        flex-wrap: wrap;
-    }
 
-
-     .grupo__identificacion-nombre .input__title,
-     .grupo__identificacion-tipoId .input__title,
-     .grupo__identificacion-direccion .input__title{
+    .input__title{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -503,10 +480,16 @@ footer .footer_div h2{
     .input__title .email,
     .input__title .tipo__cuenta,
     .input__title .num__cuenta,
-    .input__title .cta__banco{
+    .input__title .cta__banco,
+    .input__title .patrocinador__paterno,
+    .input__title .patrocinador__materno,
+    .input__title .nombre__patrocinador,
+    .input__title .celular__patrocinador,
+    .input__title .telefono__patrocinador,
+    .input__title .codigo__patrocinador,
+    .input__title .fecha__solicitud{
         width: 340px;
     }
-
 }
 
 @media (max-width: 320px){
@@ -612,10 +595,6 @@ footer .terminos{
     font-size: 14px;
 }
 
-@media (max-width: 1920px){
-    .row .col50 .imgBx{
-        height: 400px;
-        width: 100%;
-        margin-top: 20px;
-    }
+@media (max-width: 480){
+
 }
