@@ -217,7 +217,6 @@ header .logo span{
 
 .grupo__identificacion-direccion{
     padding: 10px 30px;
-    /* width: 100%; */
     display: flex;
     justify-content: center;
     margin: 10px 35px;
@@ -238,10 +237,6 @@ header .logo span{
     border: 1px solid #111;
     height: 30px;
     line-height: 30px;
-}
-
-.direccion{
-    width: 340px;
 }
 
 .grupo__identificacion-radioMail{
@@ -447,18 +442,20 @@ footer .footer_div h2{
         flex-direction: column;
         margin: 20px 20px;
         flex-wrap: wrap;
+        background: #0df053;
     }
 
-    .grupo__datos-juridico{
+    .grupo__datos-juridico,
+    .grupo__datos-natural{
         padding: 0px 30px;
         margin-bottom: 0;
         margin-top: 0;
     }
 
-    .grupo__datos-natural{
+    /* .grupo__datos-natural{
         padding: 0px 30px 30px 30px;
         margin-top: 0;
-    }
+    } */
 
 
     .input__title{
@@ -470,8 +467,42 @@ footer .footer_div h2{
     }
 
     .input__title .input__datos,
+    .input__title .input__datos-juridico,
+    .input__title .input__datos-natural,
+    .input__title .num__identificacion,
+    .input__title .nacimiento,
     .input__title .provincia,
     .input__title .ciudad,
+    .input__title .direccion,
+    .input__title .tipo__identificacion,
+    .input__title .celular,
+    .input__title .telefono,
+    .input__title .email,
+    .input__title .tipo__cuenta,
+    .input__title .num__cuenta,
+    .input__title .cta__banco,
+    .input__title .patrocinador__paterno,
+    .input__title .patrocinador__materno,
+    .input__title .nombre__patrocinador,
+    .input__title .celular__patrocinador,
+    .input__title .telefono__patrocinador,
+    .input__title .codigo__patrocinador,
+    .input__title .fecha__solicitud{
+        width: 340px;
+    }
+
+    .grupo__datos-natural{
+        width: 88%;
+    }
+}
+
+@media (max-width: 375px){
+    .input__title .input__datos,
+    .input__title .input__datos-juridico,
+    .input__title .input__datos-natural,
+    .input__title .provincia,
+    .input__title .ciudad,
+    .input__title .direccion,
     .input__title .tipo__identificacion,
     .input__title .num__identificacion,
     .input__title .nacimiento,
@@ -488,13 +519,7 @@ footer .footer_div h2{
     .input__title .telefono__patrocinador,
     .input__title .codigo__patrocinador,
     .input__title .fecha__solicitud{
-        width: 340px;
-    }
-}
-
-@media (max-width: 320px){
-    .formulario__mensaje{
-        height: 100px;
+        width: 230px;
     }
 }
 
