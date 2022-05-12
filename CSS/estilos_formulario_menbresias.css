@@ -458,6 +458,7 @@ footer .footer_div h2{
 
     .input__title .input__lenght{
         width: 340px;
+        margin: auto;
     }
 
     .grupo__datos-natural{
@@ -469,14 +470,14 @@ footer .footer_div h2{
 @media (max-width: 414px){
     .input__title .input__lenght{
         width: 280px;
-        margin: auto auto;
+        margin: auto;
     }
 }
 
 @media (max-width: 393px){
     .input__title .input__lenght{
         width: 250px;
-        margin: auto auto;
+        margin: auto;
     }
 }
 
@@ -484,14 +485,14 @@ footer .footer_div h2{
 @media (max-width: 375px){
     .input__title .input__lenght{
         width: 230px;
-        margin: auto auto;
+        margin: auto;
     }
 }
 
 @media (max-width: 320px){
     .input__title .input__lenght{
         width: 195px;
-        margin: auto auto;
+        margin: auto;
     }
 }
 
@@ -589,8 +590,4 @@ footer .terminos{
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-}
-
-@media (max-width: 480){
-
 }
