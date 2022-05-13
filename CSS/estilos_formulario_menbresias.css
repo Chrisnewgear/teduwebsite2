@@ -50,7 +50,7 @@ header .logo span{
 }
 
 .validation__container{
-    margin: 80px 150px;
+    margin: 10px 150px;
 }
 
 .subscribtion__validation h2,
@@ -71,26 +71,26 @@ header .logo span{
     border: 1px solid #111;
     cursor: pointer;
     transition: .3s;
-    box-shadow: 2px 5px 14px 0px rgba(0,0,0,0.75);
 }
 
 .step__list li a:hover{
     background-color: #fff;
-    color: #e12a4c; 
-    border: 1px solid #fff;  
+    color: #e12a4c;
 }
 
 /*===============CONTACT FORM==================*/
-
+.contact{
+    margin-bottom: 30px;
+}
 .form__title{
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
 .formulario__membresia{
-    margin: 50px  100px;
+    margin: 10px  100px;
 }
 
 .grupo__usuario{
@@ -118,7 +118,6 @@ header .logo span{
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
     margin-bottom: 12px;
-    /* margin-top: 12px; */
 }
 
 .input__datos-juridico,
@@ -146,21 +145,10 @@ header .logo span{
     margin: 20px 20px;
     display: block;
     align-content: center;
-    /* border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: inset -20px -20px 60px #bebebe,
-            inset 20px 20px 60px #ffffff; */
-
-    /* border-radius: 32px;
-       background: #e0e0e0;
-       box-shadow:  24px 24px 48px #9f9f9f,
-                    -24px -24px 48px #ffffff; */
-
     border-radius: 32px;
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     box-shadow:  24px 24px 48px #9f9f9f,
                 -24px -24px 48px #ffffff;
-
 }
 
 
@@ -412,6 +400,10 @@ footer .footer_div h2{
     }
     section {
         padding: 20px;
+    }
+
+    .validation__container{
+        margin: 10px 10px;
     }
 
     .formulario__membresia{

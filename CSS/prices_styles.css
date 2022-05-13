@@ -130,8 +130,8 @@ section{
 .memberships .container {
     margin-top: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items: flex-start;
     margin: 40px;
     flex-direction: row;
     flex-wrap: wrap;
