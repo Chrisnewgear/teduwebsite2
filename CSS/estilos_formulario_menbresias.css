@@ -50,7 +50,7 @@ header .logo span{
 }
 
 .validation__container{
-    margin: 10px 150px;
+    margin: 90px 150px 20px 150px;
 }
 
 .subscribtion__validation h2,
@@ -168,7 +168,7 @@ header .logo span{
     justify-content: flex-start     ;
     /* align-items: center; */
     /* width: 66%; */
-    margin-left: 90px;
+    margin-left: 82px;
 }
 
 .grupo__identificacion-nombre,
@@ -212,7 +212,7 @@ header .logo span{
     align-items: center;
 }
 
-.nacimiento,
+/* .nacimiento,
 .provincia,
 .ciudad,
 .direccion,
@@ -226,6 +226,20 @@ header .logo span{
     border: 1px solid #111;
     height: 30px;
     line-height: 30px;
+}
+ */
+.input__lenght{
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    height: 30px;
+    line-height: 30px;
+}
+
+.input__lenght:focus{
+    border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
 .grupo__identificacion-radioMail{
