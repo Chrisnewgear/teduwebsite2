@@ -165,9 +165,10 @@ header .logo span{
 .grupo__datos-natural{
     padding-bottom: 30px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 66%;
+    justify-content: flex-start     ;
+    /* align-items: center; */
+    /* width: 66%; */
+    margin-left: 90px;
 }
 
 .grupo__identificacion-nombre,
