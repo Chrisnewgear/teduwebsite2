@@ -426,14 +426,13 @@ footer .footer_div h2{
        margin: 50px 0;
     }
 
-	.grupo__datos,
+
+    .grupo__datos,
     .grupo__indetificacion,
     .grupo__patrocinador{
-        margin-left: 0;
-        margin-right: 0;
+        margin: 20px px;
     }
-
-    
+   
 
     .grupo__datos-juridico,
     .grupo__datos-natural,
@@ -526,7 +525,7 @@ footer .footer_div h2{
 
     .grupo__datos-natural{
         margin-left: 30px;
-     } 
+    } 
 }
 
 

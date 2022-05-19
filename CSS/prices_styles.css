@@ -272,6 +272,7 @@ section{
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: 1px solid #111;
+    font-weight: bold;
 }
 
 .memberships .container .table .button{
