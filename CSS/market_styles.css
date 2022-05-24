@@ -426,6 +426,11 @@ footer .terminos{
         height: 150px;
     }
 
+    .banner .content img{
+        width: 480px;
+        height: 150px;
+    }
+
 }
 
 @media (max-width: 1920px){

@@ -50,7 +50,7 @@ header .logo span{
 }
 
 .validation__container{
-    margin: 90px 150px 20px 150px;
+    margin: 80px 150px 20px 150px;
 }
 
 .subscribtion__validation h2,
@@ -447,7 +447,6 @@ footer .footer_div h2{
         flex-direction: column;
         margin: 20px 20px;
         flex-wrap: wrap;
-        /* background: #0df053; */
     }
 
     .grupo__datos-juridico,
@@ -470,6 +469,10 @@ footer .footer_div h2{
         margin: auto;
     }
 
+    .input__datos-natural{
+        margin-left: 30000;
+    }
+
     .grupo__datos-natural{
         width: 88%;
         padding-bottom: 20px;
@@ -486,9 +489,17 @@ footer .footer_div h2{
     
     .grupo__datos-natural{
        margin-left: 180px;
+    }
+
 }
 
 @media (max-width: 1180px){
+    .grupo__datos,
+    .grupo__indetificacion,
+    .grupo__patrocinador{
+        margin: 20px 40px;
+    }
+    
     .grupo__datos-natural{
         margin-left: 40px;
      } 
@@ -513,6 +524,10 @@ footer .footer_div h2{
     .grupo__datos-natural{
         margin-left: 30px;
      } 
+
+     .validation__container{
+        margin-top: 100px;
+    }
 }
 
 
@@ -556,6 +571,13 @@ footer .footer_div h2{
     .grupo__patrocinador{
         margin: 20px 138px;
     }
+}
+
+
+@media (max-width: 736px){
+    .validation__container{
+        margin-top: 100px;
+    } 
 }
 
 @media (max-width: 667px){
@@ -618,6 +640,10 @@ footer .footer_div h2{
     .grupo__patrocinador{
         margin: 20px -5px;
     } 
+
+    .validation__container{
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 393px){
@@ -747,6 +773,7 @@ footer .footer_div h2{
     transform: translateY(-10px);
     color: #ff0157;
 }
+
 footer .footer_div p{
     color: #111;
     text-align: center;
@@ -759,4 +786,5 @@ footer .terminos{
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    text-align: center;
 }

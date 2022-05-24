@@ -203,6 +203,12 @@ section{
     flex-direction: column;
 }
 
+
+.valores,
+.membresias__listado{
+    margin-left: 40px;
+}
+
 /*===================PRODUCTS=====================*/
 .products{
     background-image: url(/Images/products_img_static_2.jpg);
