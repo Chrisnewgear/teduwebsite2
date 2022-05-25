@@ -426,14 +426,6 @@ footer .footer_div h2{
        margin: 50px 0;
     }
 
-
-    .grupo__datos,
-    .grupo__indetificacion,
-    .grupo__patrocinador{
-        margin: 20px px;
-    }
-   
-
     .grupo__datos-juridico,
     .grupo__datos-natural,
     .grupo__identificacion-nombre,
@@ -466,17 +458,15 @@ footer .footer_div h2{
 
     .input__title .input__lenght{
         width: 340px;
-        margin: auto;
     }
 
     .input__datos-natural{
-        margin-left: 30000;
+        margin-left: 50px;
     }
-
     .grupo__datos-natural{
         width: 88%;
         padding-bottom: 20px;
-    }
+    }   
 }
 
 @media (max-width: 1920px){
@@ -501,7 +491,7 @@ footer .footer_div h2{
     }
     
     .grupo__datos-natural{
-        margin-left: 40px;
+        margin-left: 30px;
      } 
 }
 
@@ -512,6 +502,10 @@ footer .footer_div h2{
     .grupo__patrocinador{
         margin: 20px -50px;
     }
+
+    .grupo__datos-natural{
+        margin-left: 35px;
+     }
 }
 
 @media (max-width: 915px){
@@ -594,6 +588,10 @@ footer .footer_div h2{
     .grupo__patrocinador{
         margin: 20px 70px;
     } 
+
+    .grupo__datos-natural{
+        margin-left: 23px;
+     }
 }
 
 @media (max-width: 540px){
@@ -602,6 +600,10 @@ footer .footer_div h2{
     .grupo__patrocinador{
         margin: 20px 60px;
     } 
+
+    .grupo__datos-natural{
+        margin-left: 20px;
+     }
 }
 
 @media (max-width: 512px){
@@ -622,6 +624,10 @@ footer .footer_div h2{
     .grupo__patrocinador{
         margin: 20px -10px;
     }
+
+    .grupo__datos-natural{
+        margin-left: 30px;
+     }
 }
 
 

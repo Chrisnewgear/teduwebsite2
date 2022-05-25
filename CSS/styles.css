@@ -198,7 +198,7 @@ section{
 .title{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     flex-direction: column;
 }
@@ -258,12 +258,15 @@ section{
 .products .title p{
     font-weight: 400;
     color: #fff;
+    text-align: start;
 }
 
 /*.products p{
     font-weight: 300;
     color: #111;
 }*/
+
+
 
 .products .content .box .imgBx{
     position: relative;
