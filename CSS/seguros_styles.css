@@ -45,7 +45,8 @@ p{
 } */
 
 .banner .content p{
-    font-size: 1em;
+    font-size: 20px;
+    font-weight: 500;
     color: #fff;
 }
 /*
@@ -220,6 +221,11 @@ section{
 
 .insurance-2 .row .col50 .imgBx img{
     border-radius: 20px;
+}
+
+.seguros__list{
+    margin-left: 30px;
+    color: #fff;
 }
 
 /*========= WHATSAPP BUTTON =======*/

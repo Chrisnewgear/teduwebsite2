@@ -20,7 +20,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://images.pexels.com/photos/34577/pexels-photo.jpg?cs=srgb&dl=pexels-negative-space-34577.jpg&fm=jpg);
+    background: url(https://images.pexels.com/photos/6995252/pexels-photo-6995252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     /* background-color: #dfe7f7;
     background-blend-mode: luminosity; */
@@ -47,7 +47,8 @@ p{
 } */
 
 .banner .content p{
-    font-size: 1em;
+    font-size: 20px;
+    font-weight: 500;
     color: #fff;
 }
 /*
