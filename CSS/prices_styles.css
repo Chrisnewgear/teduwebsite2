@@ -400,7 +400,7 @@ section{
     border-radius: 10px;
     box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
     transition: .3s;
-    width: 300px;
+    width: 200px;
     cursor: pointer;
 }
 
@@ -411,6 +411,8 @@ section{
 .validate__button a{
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
 }
 /*========= WHATSAPP BUTTON =======*/
 .wsp-container{
