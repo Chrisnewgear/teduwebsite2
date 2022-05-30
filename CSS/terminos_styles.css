@@ -17,7 +17,7 @@ header{
     padding: 10px 100px;
     z-index: 10000;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     transition: .5s;
 	background: #e12a4c;

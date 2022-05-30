@@ -201,7 +201,7 @@ section{
 }
 
 .academy .content{
-    FONT-WEIGHT: 200;display: flex;
+    font-weight: 200;display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -209,7 +209,7 @@ section{
 }
 
 .academy .content .box {
-    width: 340px;
+    width: 380px;
     height: 580px;
     margin: 20px;
     border: 15px solid #fff;
@@ -347,6 +347,7 @@ footer .terminos{
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    text-align: center;
 }
 
 /*========= WHATSAPP BUTTON =======*/
@@ -380,6 +381,13 @@ footer .terminos{
 }
 
 /*=======================MEDIA QUERIES=======================*/
+
+/*  @media (max-width: 375px){
+    
+    .academy .content .box {
+        height: 400px;  
+    }
+} */
 
 @media (max-width: 991px){
     header,
@@ -467,8 +475,15 @@ footer .terminos{
     }
 
     .banner .content img{
-        width: 480px;
-        height: 150px;
+        width: 330px;
+        height: 100px;
+    }
+
+    .academy{
+        padding: 5px;
+    }
+    .academy .content .box {
+        height: 660px;  
     }
 }
 

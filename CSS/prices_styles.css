@@ -386,6 +386,32 @@ section{
     margin-left: 60px;
 } */
 
+.memberships-2 .row .col50 .validate__button{
+    display: flex;
+    justify-content: center;
+}
+
+.validate__button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    background: #e12a4c;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+    transition: .3s;
+    width: 300px;
+    cursor: pointer;
+}
+
+.validate__button:hover{
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.validate__button a{
+    color: #fff;
+    text-decoration: none;
+}
 /*========= WHATSAPP BUTTON =======*/
 .wsp-container{
     display: flex;
@@ -588,6 +614,11 @@ footer .terminos{
     .products .content .box .imgBx{
         height: 260px;
     }
+
+    .memberships-2{
+        padding: 0px 20px 50px 20px;
+    }
+
     .memberships-2 .row{
         flex-direction: column;
     }
@@ -624,8 +655,13 @@ footer .terminos{
     }
 
     .banner .content img{
-        width: 400px;
-        height: 150px;
+        width: 330px;
+        height: 100px;
+    }
+
+    .banner .content p{
+        font-size: 15px;
+        font-weight: 600;
     }
 }
 

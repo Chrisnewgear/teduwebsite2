@@ -344,8 +344,12 @@ header .navigation li a:hover{
     }
 
     .banner .content img{
-        width: 480px;
-        height: 150px;
+        width: 330px;
+        height: 100px;
+    }
+    
+    .banner .content p{
+        font-size: 15px;
     }
 }
 

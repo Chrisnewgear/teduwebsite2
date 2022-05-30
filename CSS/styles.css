@@ -897,8 +897,13 @@ footer .footer_div h2{
     }
 
     .banner .content img{
-        width: 400px;
-        height: 150px;
+        width: 330px;
+        height: 100px;
+    }
+
+    .banner .content p{
+        font-size: 15px;
+        font-weight: 600;
     }
 }
 
