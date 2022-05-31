@@ -84,6 +84,8 @@ p{
     transition: .3s;
     box-shadow: 7px 6px 14px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
 }
 
 .btn2:hover{
