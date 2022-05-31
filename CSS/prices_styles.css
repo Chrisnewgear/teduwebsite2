@@ -339,6 +339,10 @@ section{
     width: 48%;
 }
 
+.memberships-2 .row .col51{
+    position: relative;
+    width: 90%;
+}
 .memberships-2 .titleText{
     color: #111;
     font-size: 2em;
@@ -377,19 +381,32 @@ section{
     flex-direction: column;
 }
 
-.col50 a{
-    font-size: 30px;
-    color: #ff0157;
+.col51 {
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.col51 a{
+    font-size: 80px;
+    color: #e12a4c;
+    display: inline-block;
+    transition: .3s;
+}
+
+.col51 a:hover{
+    transform: scale3d(1.05, 1.05, 1.05);
+}
 /* .tutorial__list{
     margin-left: 60px;
 } */
 
-.memberships-2 .row .col50 .validate__button{
+/* .memberships-2 .row .col51 .validate__button{
     display: flex;
     justify-content: center;
-}
+} */
 
 .validate__button {
     display: flex;
@@ -411,8 +428,8 @@ section{
 .validate__button a{
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 /*========= WHATSAPP BUTTON =======*/
 .wsp-container{

@@ -442,12 +442,18 @@ footer .terminos{
     }
 
     .banner{
-        background-position: center;
+        background-position: top left;
     }
-    .banner .content h2{
-        font-size: 3em;
+
+
+    .banner .content p{
+        font-size: 1.2rem;
         color: #fff;
+        font-weight: 500;
     }
+
+    
+
     .row{
         flex-direction: column;
     }
