@@ -258,6 +258,30 @@ section{
     transform: translateY(-10px);
 }
 
+.write__mail {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.write__mail p{
+    font-size: 15px;
+}
+
+.write__mail a{
+    text-align: center;
+    font-size: 2.5em;
+    color: #111;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .5s;
+}
+
+.write__mail a:hover{
+    opacity: 1;
+    transform: translateY(-10px);
+    color: #2377b8;
+}
+
 /*=============FOOTER STYLE=============*/
 footer{
     display: flex;
