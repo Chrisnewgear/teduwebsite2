@@ -382,11 +382,11 @@ section{
 }
 
 .col51 {
-    text-align: center;
+    text-align: left;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .col51 a{
@@ -399,9 +399,9 @@ section{
 .col51 a:hover{
     transform: scale3d(1.05, 1.05, 1.05);
 }
-/* .tutorial__list{
+.tutorial__list{
     margin-left: 60px;
-} */
+}
 
 /* .memberships-2 .row .col51 .validate__button{
     display: flex;
@@ -681,6 +681,22 @@ footer .terminos{
     .banner .content p{
         font-size: 15px;
         font-weight: 600;
+    }
+
+    .img__tutorial {
+        display: none;
+    }
+
+    .col51 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col51 a {
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
     }
 }
 
