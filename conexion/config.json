@@ -1,0 +1,9 @@
+{
+	"conexion":{
+			"server" : "141.136.39.61",
+			"user" : "teduempr_hitsoft",
+			"password" : "Sw28Cw37**",
+			"database" :"teduempr_tedu",
+			"port" : "3306"
+	}
+} 
