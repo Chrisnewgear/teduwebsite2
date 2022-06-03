@@ -107,17 +107,17 @@ header.sticky{
     box-shadow: 0 5px 20px rgba(189, 39, 39, 0.05);
 }
 
-header .logo{
+header .fa-house{
     color: #fff;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2.5em;
     text-decoration: none;
     border: 2px solid #2377b8;
     border-radius: 8px;
-    padding: 4px 4px;
+    padding: 10px 20px;
 }
 
-header.sticky .logo{
+header.sticky .fa-house{
     color:#111
 }
 
