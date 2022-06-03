@@ -465,3 +465,33 @@ footer .terminos{
     font-weight: bold;
     font-size: 14px;
 }
+
+/*=======================MEDIA QUERIES=======================*/
+
+@media (max-width: 991px){
+    .memberships-2{
+        padding: 0px 20px 50px 20px;
+    }
+
+    .memberships-2 .row{
+        flex-direction: column;
+    }
+    .memberships-2 .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .memberships-2 .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .title{
+        text-align: center;
+    }
+    .titleText{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+}
