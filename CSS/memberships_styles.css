@@ -258,6 +258,68 @@ header .logo span{
     color: #111;
 } */
 
+
+.memberships-2{
+    padding: 0px 100px 50px 100px;
+}
+
+.memberships-2 .row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.memberships-2 .row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.memberships-2 .row .col51{
+    position: relative;
+    width: 100%;
+
+}
+.memberships-2 .titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+    align-items:  center;
+    /* background-color: #0df053; */
+}
+
+.memberships-2 .titleText span{
+    color: #e12a4c;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+.memberships-2 .row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    /*min-height: 300px;*/
+    height: 100%;
+    /*box-shadow: 7px 4px 10px 0px rgba(0,0,0,0.75)*/;
+}
+
+.memberships-2 .row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.memberships-2 .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 /*========= WHATSAPP BUTTON =======*/
 .wsp-container{
     display: flex;
@@ -286,6 +348,27 @@ header .logo span{
     background:#fff;
     color: #0df053;
     transform: translateY(-10px);
+}
+
+
+/*=======================MEDIA QUERIES=======================*/
+
+@media (max-width: 991px){
+    .memberships-2{
+        padding: 0px 20px 50px 20px;
+    }
+
+    .memberships-2 .row{
+        flex-direction: column;
+    }
+    .memberships-2 .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .memberships-2 .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
 }
 
 /*=============FOOTER STYLE=============*/

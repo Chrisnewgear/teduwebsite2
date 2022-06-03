@@ -342,12 +342,14 @@ section{
 .memberships-2 .row .col51{
     position: relative;
     width: 100%;
+
 }
 .memberships-2 .titleText{
     color: #111;
     font-size: 2em;
     font-weight: 300;
-    /* text-align: center; */
+    align-items:  center;
+    /* background-color: #0df053; */
 }
 
 .memberships-2 .titleText span{
@@ -387,15 +389,18 @@ section{
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+}
+
+.col51 h2 {
+    text-align: center;
 }
 
 .col51 a{
     font-size: 80px;
     color: #e12a4c;
     display: inline-block;
-   text-decoration: none;
-    justify-content: center;
+    text-decoration: none;
+    text-align: center;
     transition: .3s;
 }
 
@@ -416,6 +421,12 @@ section{
     display: flex;
     justify-content: center;
 } */
+
+.button__container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
 .validate__button {
     display: flex;
@@ -706,6 +717,10 @@ footer .terminos{
         display: flex;
         text-decoration: none;
         justify-content: center;
+    }
+
+    .button__container{
+        gap: 20px;
     }
 }
 
