@@ -5,6 +5,10 @@ ini_set('display_errors', '1');
 require_once 'conecta.php';
 require_once('../TCPDF/tcpdf.php');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d370eb6ffcd9e653a23efeb1bf77c696475f50ae
 //$formatter = new NumeroALetras();
 //$formatter->apocope = true;
 
@@ -285,8 +289,14 @@ function contratomembresia($usuario,$juridica,$ruc,$num__identificacion,$natural
     $pdf->SetKeywords('MEMBRESIA');
 
     // set default header data
+<<<<<<< HEAD
     //$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 006', PDF_HEADER_STRING);
 
+=======
+   
+    //$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 000', PDF_HEADER_STRING);
+    
+>>>>>>> d370eb6ffcd9e653a23efeb1bf77c696475f50ae
     // set header and footer fonts
     $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
     $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));

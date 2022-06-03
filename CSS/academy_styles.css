@@ -62,6 +62,8 @@ p{
     transition: .3s;
     box-shadow: 7px 6px 14px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
 }
 
 .btn2:hover{
@@ -440,12 +442,18 @@ footer .terminos{
     }
 
     .banner{
-        background-position: center;
+        background-position: top left;
     }
-    .banner .content h2{
-        font-size: 3em;
+
+
+    .banner .content p{
+        font-size: 1.2rem;
         color: #fff;
+        font-weight: 500;
     }
+
+    
+
     .row{
         flex-direction: column;
     }

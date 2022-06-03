@@ -69,7 +69,11 @@
  * Deafult image logo used be the default Header() method.
  * Please set here your own logo or an empty string to disable it.
  */
+<<<<<<< HEAD
 //define ('PDF_HEADER_LOGO', '');
+=======
+define ('PDF_HEADER_LOGO', 'TEDU_LOGO.jpg');
+>>>>>>> d370eb6ffcd9e653a23efeb1bf77c696475f50ae
 
 /**
  * Header logo image width in user units.

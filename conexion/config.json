@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"conexion":{
 			"server" : "141.136.39.61",
@@ -6,4 +7,14 @@
 			"database" :"teduempr_tedu",
 			"port" : "3306"
 	}
+=======
+{
+	"conexion":{
+			"server" : "141.136.39.61",
+			"user" : "teduempr_hitsoft",
+			"password" : "Sw28Cw37**",
+			"database" :"teduempr_tedu",
+			"port" : "3306"
+	}
+>>>>>>> d370eb6ffcd9e653a23efeb1bf77c696475f50ae
 } 
