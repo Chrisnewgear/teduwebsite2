@@ -9,10 +9,11 @@
 	<link rel="icon" href="/Images/TEDU-ICO.ico">
 	<link rel="stylesheet" href="/CSS/estilos_formulario_menbresias.css">
 	<script src="https://kit.fontawesome.com/0854984c4f.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
 	<header>
-        <a href="/tedu/index.html" class="logo">TEDÜ</a>
+        <a href="/index.html" class="logo">TEDÜ</a>
         <!-- <div class="menuToggle" onclick="toggleMenu()"></div> -->
     </header>
 
@@ -51,7 +52,7 @@
 			<h2>Formulario para validar tu cuenta TEDU</h2>
 		</div>
 
-		<form action="../conexion/registra.php" method="post" class="formulario__membresia" name='inscripcion'>
+		<form action="../conexion/registra.php" method="post" class="formulario__membresia" name='inscripcion' id="inscripcion">
 			<!-- GRUPO USUARIO -->
 			<div class="container__usuario">
 
@@ -62,7 +63,7 @@
 					</label>
 				</div>
 
-				<!-- <div class="grupo__datos">
+				<div class="grupo__datos">
 					<label for="datos" class="titulo__grupo">Datos del solicitante</label>
 
 						<div class="grupo__datos-juridico">
@@ -84,7 +85,7 @@
 							</label>
 						</div>
 				</div>
-			</div> -->
+			</div>
 
 			<!-- GRUPO IDENTIFICACION -->
 			<div class="container__identificacion">
@@ -235,8 +236,14 @@
 				</div>
 			</div>
 			<div class="btn__container">
-				<input type="submit" value="Generar contrato" class="btn">
+				<input type="submit" value="Generar contrato" class="btn" id="btnEnviar">
 			</div>
+			<div id="exito" style="display:none">
+                Sus datos han sido recibidos con éxito.
+            </div>
+            <div id="fracaso" style="display:none">
+                Se ha producido un error durante el envío de datos.
+            </div>
 		</form>
 	</section>
 
@@ -264,5 +271,6 @@
     </footer>
 	<!-- <script src="/JS/formulario_membresia.js"></script> -->
 	<script src="/JS/script.js"></script>
+
 </body>
 </html>
