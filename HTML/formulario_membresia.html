@@ -59,7 +59,7 @@
 				<div class="grupo__usuario">
 					<label for="usuario" class="formulario__usuario">
 						<span>Código de usuario:</span>
-						<input type="text" class="usuario" name="usuario" id="usuario" required>
+						<input type="text" class="usuario" name="usuario" id="usuario" required maxlength="6">
 					</label>
 				</div>
 
@@ -95,18 +95,18 @@
 					<div class="grupo__identificacion-nombre">
 						<label for="paterno" class="input__title">
 							<span>Apellido Paterno:</span>
-							<input type="text" class="input__datos input__lenght" name="paterno" id="paterno" required>
+							<input type="text" class="input__datos input__lenght" name="paterno" id="paterno" required maxlength="15">
 						</label>
 
 						<label for="materno" class="input__title">
 							<span>Apellido Materno:</span>
-							<input type="text" class="input__datos input__lenght" name="materno" id="materno" required>
+							<input type="text" class="input__datos input__lenght" name="materno" id="materno" required maxlength="15">
 						</label>
 
 
 						<label for="nombre__usuario" class="input__title">
 							<span>Nombres:</span>
-							<input type="text" class="input__datos input__lenght" name="nombre__ususario" id="nombre__usuario" required>
+							<input type="text" class="input__datos input__lenght" name="nombre__ususario" id="nombre__usuario" required maxlength="20"> 
 						</label>
 					</div>
 
@@ -117,7 +117,7 @@
 								<option value="Pasaporte">Pasaporte</option>
 								<option value="Cédula">Cédula</option>
 							</select>
-							<input type="number" class="num__identificacion input__lenght" name="num__identificacion" id="num__identificacion" required>
+							<input type="number" class="num__identificacion input__lenght" name="num__identificacion" id="num__identificacion" required maxlength="10">
 						</label>
 
 						<label for="date" class="input__title">
@@ -127,34 +127,34 @@
 
 						<label for="provincia" class="input__title">
 							<span>Provincia:</span>
-							<input type="text" class="provincia input__lenght" name="provincia" id="provincia" required>
+							<input type="text" class="provincia input__lenght" name="provincia" id="provincia" required maxlength="40">
 						</label>
 
 						<label for="ciudad" class="input__title">
 							<span>Ciudad:</span>
-							<input type="text" class="ciudad input__lenght" name="ciudad" id="ciudad" required>
+							<input type="text" class="ciudad input__lenght" name="ciudad" id="ciudad" required maxlength="30">
 						</label>
 					</div>
 
 					<div class="grupo__identificacion-direccion">
 						<label for="direccion" class="input__title">
 							<span>Dirección domiciliaria:</span>
-							<input type="text" class="direccion input__lenght" name="direccion" id="direccion">
+							<input type="text" class="direccion input__lenght" name="direccion" id="direccion" maxlength="100">
 						</label>
 
 						<label for="celular" class="input__title">
 							<span>Celular:</span>
-							<input type="tel"class="celular input__lenght" name="celular" id="celular" required>
+							<input type="tel"class="celular input__lenght" name="celular" id="celular" required maxlength="10">
 						</label>
 
 						<label for="telefono" class="input__title">
 							<span>Teléfono:</span>
-							<input type="tel"class="telefono input__lenght" name="telefono" id="telefono">
+							<input type="tel"class="telefono input__lenght" name="telefono" id="telefono" maxlength="9">
 						</label>
 
 						<label for="email" class="input__title">
 							<span>Email:</span>
-							<input type="email" class="email input__lenght" name="email" id="email" required>
+							<input type="email" class="email input__lenght" name="email" id="email" required maxlength="40">
 						</label>
 					</div>
 
@@ -179,12 +179,12 @@
 								<option value="Pasaporte">Ahorros</option>
 								<option value="Cédula">Corriente</option>
 							</select>
-							<input type="number" class="num__cuenta input__lenght" name="num__cuenta" id="num__cuenta">
+							<input type="number" class="num__cuenta input__lenght" name="num__cuenta" id="num__cuenta" maxlength="20">
 						</label>
 
 						<label for="banco" class="input__title">
 							<span>Banco:</span>
-							<input type="text" class="cta__banco input__lenght" name="banco" id="banco">
+							<input type="text" class="cta__banco input__lenght" name="banco" id="banco" maxlength="30">
 						</label>
 					</div>
 				</div>
@@ -198,34 +198,34 @@
 					<div class="grupo__patrocinador-nombre">
 						<label for="paterno__patrocinador" class="input__title">
 							<span>Apellido Paterno:</span>
-							<input type="text" class="patrocinador__paterno input__lenght" name="patrocinador__paterno" id="patrocinador__paterno">
+							<input type="text" class="patrocinador__paterno input__lenght" name="patrocinador__paterno" id="patrocinador__paterno" required maxlength="15">
 						</label>
 
 						<label for="materno__patrocinador" class="input__title">
 							<span>Apellido Materno:</span>
-							<input type="text" class="patrocinador__materno input__lenght" name="patrocinador__materno" id="patrocinador__materno">
+							<input type="text" class="patrocinador__materno input__lenght" name="patrocinador__materno" id="patrocinador__materno" required maxlength="15">
 						</label>
 
 						<label for="nombre__patrocinador" class="input__title">
 							<span>Nombres:</span>
-							<input type="text" class="nombre__patrocinador input__lenght" name="nombre__patrocinador" id="nombre__patrocinador">
+							<input type="text" class="nombre__patrocinador input__lenght" name="nombre__patrocinador" id="nombre__patrocinador" required maxlength="20">
 						</label>
 					</div>
 
 					<div class="grupo__patrocinador-contacto">
 						<label for="celular__patrocinador" class="input__title">
 							<span>Celular:</span>
-							<input type="number" class="celular__patrocinador input__lenght" name="celular-patrocinador" id="celular-patrocinador">
+							<input type="number" class="celular__patrocinador input__lenght" name="celular-patrocinador" id="celular-patrocinador" maxlength="10">
 						</label>
 
 						<label for="telefono__patrocinador" class="input__title">
 							<span>Telefóno:</span>
-							<input type="number" class="telefono__patrocinador input__lenght" name="telefono__patrocinador" id="telefono__patrocinador">
+							<input type="number" class="telefono__patrocinador input__lenght" name="telefono__patrocinador" id="telefono__patrocinador" maxlength="9">
 						</label>
 
 						<label for="codigo__patrocinador" class="input__title">
 							<span>Código de Patrocinador:</span>
-							<input type="text" class="codigo__patrocinador input__lenght" name="codigo__patrocinador" id="codigo__patrocinador">
+							<input type="text" class="codigo__patrocinador input__lenght" name="codigo__patrocinador" id="codigo__patrocinador" required maxlength="6">
 						</label>
 
 						<label for="fecha__solicitud" class="input__title">
