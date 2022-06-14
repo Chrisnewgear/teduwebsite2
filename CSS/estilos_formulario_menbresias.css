@@ -294,39 +294,10 @@ footer .footer_div h2{
     } 
 } 
 
-/* @media (min-width: 720px){
+@media (min-width: 720px){
       
-    
- */
- 
-
-
-/* 
-    .align__container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .input__lenght{
-        width: 30%;
-        margin: 0.5rem 0.5rem;
-    }
-
-    .input__title{
-        width: 100%;
-    }
-
-    .data__subcontainer{
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .data__subcontainer .input__lenght {
-        width: 12rem;
-    }
-
-}*/
+   
+}
 
 /*=============FOOTER STYLE=============*/
 footer{
