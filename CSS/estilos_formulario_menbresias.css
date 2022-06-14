@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 
@@ -17,7 +18,7 @@ header{
     padding: 10px 100px;
     z-index: 10000;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     transition: .5s;
 	background: #e12a4c;
@@ -81,6 +82,7 @@ header .logo span{
 /*===============CONTACT FORM==================*/
 .contact{
     margin-bottom: 30px;
+    
 }
 .form__title{
     margin-top: 20px;
@@ -89,8 +91,10 @@ header .logo span{
     justify-content: center;
 }
 
+
+
 .formulario__membresia{
-    margin: 10px  100px;
+    margin: 1rem  20%;
 }
 
 .grupo__usuario{
@@ -120,29 +124,20 @@ header .logo span{
     margin-bottom: 12px;
 }
 
-.input__datos-juridico,
-.input__datos-natural{
-    width: 340px;
-    margin-right: 20px;
-    border-radius: 5px;
-    border: 1px solid #111;
-    height: 30px;
-    line-height: 30px;
+.input__lenght:focus{
+    border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
-.input__datos-ruc{
-    border-radius: 5px;
-    border: 1px solid #111;
-    height: 30px;
-    line-height: 30px;
-}
 
 .grupo__datos,
 .grupo__indetificacion,
 .grupo__patrocinador{
     /* border: 1px solid #111; */
+    
     border-radius: 12px;
-    margin: 20px 20px;
+    margin: 2rem 2rem;
     display: block;
     align-content: center;
     border-radius: 32px;
@@ -152,155 +147,6 @@ header .logo span{
 }
 
 
-.grupo__datos-juridico,
-.grupo__datos-natural{
-    padding: 20px 30px;
-}
-
-.grupo__datos-juridico {
-    display: flex;
-    justify-content: space-around;
-}
-
-.grupo__datos-natural{
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: flex-start     ;
-    /* align-items: center; */
-    /* width: 66%; */
-    margin-left: 82px;
-    flex-wrap: wrap;
-}
-
-.grupo__identificacion-nombre,
-.grupo__identificacion-tipoId{
-    padding: 10px 30px;
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.grupo__identificacion-nombre .input__datos{
-    border-radius: 5px;
-    border: 1px solid #111;
-    height: 30px;
-    line-height: 30px;
-}
-
-.grupo__identificacion-tipoId .input__title,
-.grupo__identificacion-cuenta .input__title{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 5px;
-}
-
-.input__title .num__identificacion,
-.input__title .num__cuenta{
-    width: 205px;
-}
-
-.nacimiento{
-    width: 180px;
-}
-
-.grupo__identificacion-direccion{
-    padding: 10px 30px;
-    display: flex;
-    justify-content: center;
-    margin: 10px 35px;
-    align-items: center;
-}
-
-/* .nacimiento,
-.provincia,
-.ciudad,
-.direccion,
-.celular,
-.telefono,
-.email,
-.tipo__identificacion,
-.num__identificacion{
-    margin-right: 20px;
-    border-radius: 5px;
-    border: 1px solid #111;
-    height: 30px;
-    line-height: 30px;
-}
- */
-.input__lenght{
-    margin-right: 20px;
-    border-radius: 5px;
-    border: 1px solid #111;
-    height: 30px;
-    line-height: 30px;
-}
-
-.input__lenght:focus{
-    border: 3px solid #0075FF;
-	outline: none;
-	box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
-}
-
-.grupo__identificacion-radioMail{
-    padding: 10px 30px;
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-    margin: 10px 35px;
-    align-items: center;
-}
-
-.grupo__identificacion-radioMail p{
-    font-weight: 800;
-}
-
-.grupo__identificacion-cuenta{
-    padding: 10px 30px;
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10px 40px;
-    align-items: center;
-    padding-bottom: 30px;
-}
-
-.tipo__cuenta,
-.num__cuenta,
-.cta__banco{
-    margin-right: 20px;
-    border-radius: 5px;
-    border: 1px solid #111;
-    height: 30px;
-    line-height: 30px;
-}
-
-.grupo__patrocinador-nombre,
-.grupo__patrocinador-contacto{
-    padding: 10px 30px;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    align-items: center;
-    margin: 10px 35px;
-    padding-bottom: 30px;
-}
-
-
-.patrocinador__paterno,
-.patrocinador__materno,
-.nombre__patrocinador,
-.celular__patrocinador,
-.telefono__patrocinador,
-.codigo__patrocinador,
-.fecha__solicitud{
-    margin-right: 20px;
-    border-radius: 5px;
-    border: 1px solid #111;
-    height: 30px;
-    line-height: 30px;
-}
 
 .btn__container{
     display: flex;
@@ -382,98 +228,76 @@ footer .footer_div h2{
 
 
 /*=======================MEDIA QUERIES=======================*/
+@media (min-width: 320px){
+    
+    .grupo__usuario{
+        margin: 0 auto;
+    }
 
-@media (max-width: 991px){
-    header,
-    header.sticky{
-        padding: 10px 20px;
+    .cod__usuario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    header .navigation{
-        display: none;
+    
+    .validation__container {
+       margin: 80px 20px 20px 20px;
     }
-    header .navigation.active{
+
+    .form__title h2 {
+        text-align: center;
+    }
+
+    .grupo__datos,
+    .grupo__indetificacion,
+    .grupo__patrocinador{
+        margin: 2rem -3rem;
+    }
+
+    .data__container {
+        display: flex;
+        flex-direction: column;     
+        margin: 20px 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .container__separator{
+        border-bottom: 1px solid #111;
+    }
+
+    .input__lenght{
         width: 100%;
-        height: calc(100% - 68px);
-        position: fixed;
-        top: 68px;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: #fff;
+        margin: 5px auto;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 10px;
+        border-width: 0;
     }
-    header .navigation li{
+
+    .grupo__datos-natural{
         margin-left: 0;
+        border-top: 1px solid #111;
     }
-    header .navigation li a{
-        color: #111;
-        font-size: 1.6em;
-    }
-
-    header.sticky .menuToggle{
-        filter: invert(1);
-    }
-    section {
-        padding: 20px;
-    }
-
-    .validation__container{
-        margin: 80px 30px 10px 30px
-    }
-
-    .formulario__membresia{
-       margin: 50px 0;
-    }
-
-    .container__identificacion{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .grupo__datos-juridico,
-    .grupo__datos-natural,
-    .grupo__identificacion-nombre,
-    .grupo__identificacion-tipoId,
-    .grupo__identificacion-direccion,
-    .grupo__identificacion-radioMail,
-    .grupo__identificacion-cuenta,
-    .grupo__patrocinador-nombre,
-    .grupo__patrocinador-contacto{
-        display: flex;
-        flex-direction: column;
-        margin: 20px 20px;
-        flex-wrap: wrap;
-    }
-
-    .grupo__datos-juridico,
-    .grupo__datos-natural{
-        padding: 0px 30px;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-
-    .input__title{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 20px;
-    }
-
-    .input__title .input__lenght{
-        width: 340px;
-    }
-
-    .input__datos-natural{
-        margin-left: 50px;
-    }
-    .grupo__datos-natural{
-        width: 88%;
-        padding-bottom: 20px;
-    }
+    
 }
 
+@media (min-width: 480px){
+    
+    .data__subcontainer{
+        margin: 0 auto;
+        text-align: center;
+   }
+
+    .input__lenght{
+       width: 20rem;
+    } 
+} 
+
+@media (min-width: 720px){
+      
+   
+}
 
 /*=============FOOTER STYLE=============*/
 footer{

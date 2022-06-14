@@ -37,8 +37,8 @@
 	</section> -->
 	<section class="validation__container">
 		<div class="subscribtion__validation">
-			<h2>Validación de tu cuenta</h2>
-			<h3>Ahora solo debes validar tu cuenta de socio TEDU Emprende</h3>
+			<h2>Generar Contrato</h2>
+			<h3>Ahora solo debes generar tu contrato de socio TEDU Emprende</h3>
 			<br>
 			<p>Para validar tu cuenta con <strong>TEDU</strong>, solo debes llenar el siguiente formulario para oficialmente ser parte de nuestra red de emprendedores</p><br>
 			<p>Luego de llenar el formulario podrás descargar tu <strong>CONTRATO</strong> y la documentación necesaria para que puedes empezar a trabajar como nuestro socio independiente.</p>
@@ -57,7 +57,7 @@
 			<div class="container__usuario">
 
 				<div class="grupo__usuario">
-					<label for="usuario" class="formulario__usuario">
+					<label for="usuario" class="cod__usuario">
 						<span>Código de usuario:</span>
 						<input type="text" class="usuario" name="usuario" id="usuario" required maxlength="6">
 					</label>
@@ -66,23 +66,28 @@
 				<div class="grupo__datos">
 					<label for="datos" class="titulo__grupo">Datos del solicitante</label>
 
-						<div class="grupo__datos-juridico">
-							<label for="juridica" class="input__title">
-								<span>Persona jurídica:</span>
-								<input type="text" class="input__datos-juridico input__lenght" name="juridica" id="juridica">
-							</label>
+						<div class="data__container solicitante__container">
+							
+							<!-- <div class="solicitante__subcontainer"> -->
+								<label for="juridica" class="input__title">
+									<span>Persona jurídica:</span>
+								</label>
+								<input type="text" class="input__datos-juridico input__lenght" name="juridica" id="juridica" maxlength="20">
+							<!-- </div> -->
 
-							<label for="ruc" class="input__title">
-								<span>RUC:</span>
-								<input type="number" class="input__datos-ruc input__lenght" name="ruc" id="ruc">
-							</label>
-						</div>
-
-						<div class="grupo__datos-natural">
-							<label for="natural" class="input__title">
-								<span>Persona natural:</span>
-								<input type="text" class="input__datos-natural input__lenght" name="natural" id="natural">
-							</label>
+							<!-- <div class="solicitante__subcontainer"> -->
+								<label for="ruc" class="input__title">
+									<span>RUC:</span>
+								</label>
+								<input type="number" class="input__datos-ruc input__lenght" name="ruc" id="ruc" maxlength="13">
+							<!-- </div> -->
+							
+							<!-- <div class="solicitante__subcontainer"> -->
+								<label for="natural" class="input__title">
+									<span>Persona natural:</span>	
+								</label>
+								<input type="text" class="input__datos-natural input__lenght" name="natural" id="natural" maxlength="20">
+							<!-- </div> -->
 						</div>
 				</div>
 			</div>
@@ -92,73 +97,85 @@
 				<div class="grupo__indetificacion">
 					<label for="nombre" class="titulo__grupo">A. Identificación</label>
 
-					<div class="grupo__identificacion-nombre">
-						<label for="paterno" class="input__title">
-							<span>Apellido Paterno:</span>
-							<input type="text" class="input__datos input__lenght" name="paterno" id="paterno" required maxlength="15">
-						</label>
-
-						<label for="materno" class="input__title">
-							<span>Apellido Materno:</span>
-							<input type="text" class="input__datos input__lenght" name="materno" id="materno" required maxlength="15">
-						</label>
-
-
-						<label for="nombre__usuario" class="input__title">
-							<span>Nombres:</span>
-							<input type="text" class="input__datos input__lenght" name="nombre__ususario" id="nombre__usuario" required maxlength="20"> 
-						</label>
+					<div class="data__container container__separator">
+						
+						<!-- <div class="data__subcontainer"> -->
+							<label for="paterno" class="input__title">
+								<span>Apellido Paterno:</span>
+							</label>
+							<input type="text" class="input__datos__paterno input__lenght" name="paterno" id="paterno" required maxlength="20">
+						<!-- </div> -->
+						
+						<!-- <div class="data__subcontainer"> -->
+							<label for="materno" class="input__title">
+								<span>Apellido Materno:</span>
+							</label>
+							<input type="text" class="input__datos input__lenght" name="materno" id="materno" required maxlength="20">
+						<!-- </div> -->
+						
+						<!-- <div class="data__subcontainer"> -->
+							<label for="nombre__usuario" class="input__title">
+								<span>Nombres:</span>
+							</label>
+							<input type="text" class="input__datos__nombre input__lenght" name="paterno" id="paterno" required maxlength="20">
+						<!-- </div> -->		
 					</div>
 
-					<div class="grupo__identificacion-tipoId">
-						<label for="tipo__identificacion" class="input__title">
-							<span>Identificación</span>
+					<div class="data__container container__separator">
+						<!-- <div class="data__subcontainer"> -->
+							<label for="tipo__identificacion" class="input__title">
+								<span>Identificación</span>
+							</label>
 							<select class="tipo__identificacion input__lenght" name="tipo__identificacion" id="tipo__identificacion" required>
 								<option value="Pasaporte">Pasaporte</option>
 								<option value="Cédula">Cédula</option>
 							</select>
 							<input type="number" class="num__identificacion input__lenght" name="num__identificacion" id="num__identificacion" required maxlength="10">
-						</label>
+						<!-- </div> -->
 
-						<label for="date" class="input__title">
-							<span>Fecha de nacimiento:</span>
+						<!-- <div class="data__subcontainer"> -->
+							<label for="date" class="input__title">
+								<span>Fecha de nacimiento:</span>
+							</label>
 							<input type="date" class="nacimiento input__lenght" name="nacimiento" id="nacimiento" required>
-						</label>
+						<!-- </div> -->	
 
-						<label for="provincia" class="input__title">
-							<span>Provincia:</span>
+						<!-- <div class="data__subcontainer"> -->
+							<label for="provincia" class="input__title">
+								<span>Provincia:</span>
+							</label>
 							<input type="text" class="provincia input__lenght" name="provincia" id="provincia" required maxlength="40">
-						</label>
+						<!-- </div> -->	
 
 						<label for="ciudad" class="input__title">
 							<span>Ciudad:</span>
-							<input type="text" class="ciudad input__lenght" name="ciudad" id="ciudad" required maxlength="30">
 						</label>
+						<input type="text" class="ciudad input__lenght" name="ciudad" id="ciudad" required maxlength="30">
 					</div>
 
-					<div class="grupo__identificacion-direccion">
+					<div class="data__container container__separator">
 						<label for="direccion" class="input__title">
 							<span>Dirección domiciliaria:</span>
-							<input type="text" class="direccion input__lenght" name="direccion" id="direccion" maxlength="100">
 						</label>
+						<input type="text" class="direccion input__lenght" name="direccion" id="direccion" maxlength="100">
 
 						<label for="celular" class="input__title">
 							<span>Celular:</span>
-							<input type="tel"class="celular input__lenght" name="celular" id="celular" required maxlength="10">
 						</label>
+						<input type="tel"class="celular input__lenght" name="celular" id="celular" required maxlength="10">
 
 						<label for="telefono" class="input__title">
 							<span>Teléfono:</span>
-							<input type="tel"class="telefono input__lenght" name="telefono" id="telefono" maxlength="9">
 						</label>
+						<input type="tel"class="telefono input__lenght" name="telefono" id="telefono" maxlength="9">
 
 						<label for="email" class="input__title">
 							<span>Email:</span>
-							<input type="email" class="email input__lenght" name="email" id="email" required maxlength="40">
 						</label>
+						<input type="email" class="email input__lenght" name="email" id="email" required maxlength="40">
 					</div>
 
-					<div class="grupo__identificacion-radioMail">
+					<div class="data__container container__separator">
 						<p>¿Acepto recibir la información relacionada con la red de mercadeo TEDU en la dirección de correo suminstrada?</p>
 
 						<label for="radioSi" class="input__title">
@@ -172,20 +189,20 @@
 						</label>
 					</div>
 
-					<div class="grupo__identificacion-cuenta">
+					<div class="data__container">
 						<label for="tipo__cuenta" class="input__title">
 							<span>Cuenta bancaria</span>
-							<select class="tipo__cuenta input__lenght" name="tipo__cuenta" id="tipo__cuenta">
-								<option value="Pasaporte">Ahorros</option>
-								<option value="Cédula">Corriente</option>
-							</select>
-							<input type="number" class="num__cuenta input__lenght" name="num__cuenta" id="num__cuenta" maxlength="20">
 						</label>
+						<select class="tipo__cuenta input__lenght" name="tipo__cuenta" id="tipo__cuenta">
+							<option value="Pasaporte">Ahorros</option>
+							<option value="Cédula">Corriente</option>
+						</select>
+						<input type="number" class="num__cuenta input__lenght" name="num__cuenta" id="num__cuenta" maxlength="20">
 
 						<label for="banco" class="input__title">
 							<span>Banco:</span>
-							<input type="text" class="cta__banco input__lenght" name="banco" id="banco" maxlength="30">
 						</label>
+						<input type="text" class="cta__banco input__lenght" name="banco" id="banco" maxlength="30">
 					</div>
 				</div>
 			</div>
@@ -195,43 +212,43 @@
 				<div class="grupo__patrocinador">
 					<label for="patrocinador" class="titulo__grupo">B. Datos del patrocinador</label>
 
-					<div class="grupo__patrocinador-nombre">
+					<div class="data__container container__separator">
 						<label for="paterno__patrocinador" class="input__title">
 							<span>Apellido Paterno:</span>
-							<input type="text" class="patrocinador__paterno input__lenght" name="patrocinador__paterno" id="patrocinador__paterno" required maxlength="15">
 						</label>
+						<input type="text" class="patrocinador__paterno input__lenght" name="patrocinador__paterno" id="patrocinador__paterno" required maxlength="15">
 
 						<label for="materno__patrocinador" class="input__title">
 							<span>Apellido Materno:</span>
-							<input type="text" class="patrocinador__materno input__lenght" name="patrocinador__materno" id="patrocinador__materno" required maxlength="15">
 						</label>
+						<input type="text" class="patrocinador__materno input__lenght" name="patrocinador__materno" id="patrocinador__materno" required maxlength="15">
 
 						<label for="nombre__patrocinador" class="input__title">
 							<span>Nombres:</span>
-							<input type="text" class="nombre__patrocinador input__lenght" name="nombre__patrocinador" id="nombre__patrocinador" required maxlength="20">
 						</label>
+						<input type="text" class="nombre__patrocinador input__lenght" name="nombre__patrocinador" id="nombre__patrocinador" required maxlength="20">
 					</div>
 
-					<div class="grupo__patrocinador-contacto">
+					<div class="data__container last__data__container">
 						<label for="celular__patrocinador" class="input__title">
 							<span>Celular:</span>
-							<input type="number" class="celular__patrocinador input__lenght" name="celular-patrocinador" id="celular-patrocinador" maxlength="10">
 						</label>
+						<input type="number" class="celular__patrocinador input__lenght" name="celular-patrocinador" id="celular-patrocinador" maxlength="10">
 
 						<label for="telefono__patrocinador" class="input__title">
 							<span>Telefóno:</span>
-							<input type="number" class="telefono__patrocinador input__lenght" name="telefono__patrocinador" id="telefono__patrocinador" maxlength="9">
 						</label>
+						<input type="number" class="telefono__patrocinador input__lenght" name="telefono__patrocinador" id="telefono__patrocinador" maxlength="9">
 
 						<label for="codigo__patrocinador" class="input__title">
 							<span>Código de Patrocinador:</span>
-							<input type="text" class="codigo__patrocinador input__lenght" name="codigo__patrocinador" id="codigo__patrocinador" required maxlength="6">
 						</label>
+						<input type="text" class="codigo__patrocinador input__lenght" name="codigo__patrocinador" id="codigo__patrocinador" required maxlength="6">
 
 						<label for="fecha__solicitud" class="input__title">
 							<span>Fecha de solicitud:</span>
-							<input type="date" class="fecha__solicitud input__lenght" name="fecha__solicitud" id="fecha__solicitud">
 						</label>
+						<input type="date" class="fecha__solicitud input__lenght" name="fecha__solicitud" id="fecha__solicitud">
 					</div>
 				</div>
 			</div>
