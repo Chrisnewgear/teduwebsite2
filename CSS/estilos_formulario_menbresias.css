@@ -91,7 +91,9 @@ header .logo span{
     justify-content: center;
 }
 
-
+.input__lenght{
+    padding-left: 10px;
+}
 
 .formulario__membresia{
     margin: 1rem  20%;
@@ -241,7 +243,7 @@ footer .footer_div h2{
     }
     
     .validation__container {
-       margin: 80px 20px 20px 20px;
+        margin: 80px 20px 20px 20px;
     }
 
     .form__title h2 {
@@ -267,7 +269,7 @@ footer .footer_div h2{
     }
 
     .input__lenght{
-        width: 100%;
+        width: 14rem;
         margin: 5px auto;
         height: 32px;
         line-height: 32px;
@@ -275,11 +277,30 @@ footer .footer_div h2{
         border-width: 0;
     }
 
+    .select__input-lenght{
+        width: 100%;
+        margin: 5px auto;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 10px;
+        border-width: 0;
+        padding-left: 10px;
+    }
+
+    
     .grupo__datos-natural{
         margin-left: 0;
         border-top: 1px solid #111;
     }
     
+    .input__usuario{
+        width: 10rem;
+        padding-left: 10px;
+    }
+
+    .data__subcontainer .input__title{
+        display: block;
+    }
 }
 
 @media (min-width: 480px){
@@ -287,18 +308,54 @@ footer .footer_div h2{
     .data__subcontainer{
         margin: 0 auto;
         text-align: center;
-   }
+}
 
     .input__lenght{
-       width: 20rem;
+        width: 20rem;
     } 
+
 } 
 
 @media (min-width: 720px){
-      
-   
+
+    .grupo__datos,
+    .grupo__indetificacion,
+    .grupo__patrocinador{
+        margin: 2rem -8rem;
+    }
+
+    .solicitante__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .input__lenght{
+        width: 100%;
+    }
+
+    .data__container-indentificacion,
+    .data__container-patrocinador{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .data__container-indentificacion-banco{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .input__lenght{
+        width: 12rem;
+    }
 }
 
+@media (min-width: 1080px){
+    .grupo__datos,
+    .grupo__indetificacion,
+    .grupo__patrocinador{
+        margin: 2rem -1rem;
+    }
+}
 /*=============FOOTER STYLE=============*/
 footer{
     display: flex;
