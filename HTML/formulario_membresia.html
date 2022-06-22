@@ -59,7 +59,7 @@
 				<div class="grupo__usuario">
 					<label for="usuario" class="cod__usuario">
 						<span>Código de usuario:</span>
-						<input type="text" class="input__usuario" name="usuario" id="usuario" required maxlength="6" minlength="6" placeholder="bs1017" pattern="[!¡.,-@¿?#\/]">
+						<input type="text" class="input__usuario" name="usuario" id="usuario" required maxlength="6" placeholder="bs1017">
 					</label>
 				</div>
 
@@ -67,7 +67,7 @@
 					<label for="datos" class="titulo__grupo">Datos del solicitante</label>
 
 						<div class="data__container solicitante__container">
-							
+
 							<div class="data__subcontainer">
 								<label for="juridica" class="input__title">
 									<span>Persona jurídica:</span>
@@ -81,12 +81,12 @@
 								</label>
 								<input type="number" class="input__datos-ruc input__lenght" name="ruc" id="ruc" maxlength="13" placeholder="opcional">
 							</div>
-							
+
 							<div class="data__subcontainer">
 								<label for="natural" class="input__title">
-									<span>Persona natural:</span>	
+									<span>Persona natural:</span>
 								</label>
-								<input type="text" class="input__datos-natural input__lenght" name="natural" id="natural" maxlength="20" placeholder="C.I.">
+								<input type="text" class="input__datos-natural input__lenght" name="natural" id="natural" maxlength="25" placeholder="Un nombre y un apellido">
 							</div>
 						</div>
 				</div>
@@ -131,7 +131,7 @@
 								<option value="Cédula">Cédula</option>
 								<option value="Pasaporte">Pasaporte</option>
 							</select>
-							<input type="number" class="num__identificacion input__lenght" name="num__identificacion" id="num__identificacion" required maxlength="10">
+							<input type="text" class="num__identificacion input__lenght" name="num__identificacion" id="num__identificacion" pattern="\d*" required maxlength="10">
 						</div>
 
 						<div class="data__subcontainer">
@@ -176,7 +176,7 @@
 							<label for="telefono" class="input__title">
 								<span>Teléfono:</span>
 							</label>
-							<input type="tel"class="telefono input__lenght" name="telefono" id="telefono" maxlength="9">
+							<input type="tel"class="telefono input__lenght" name="telefono" id="telefono" maxlength="9" placeholder="Opcional">
 						</div>
 
 						<div class="data__subcontainer">
@@ -211,7 +211,7 @@
 								<option value="Pasaporte">Ahorros</option>
 								<option value="Cédula">Corriente</option>
 							</select>
-							<input type="number" class="num__cuenta input__lenght" name="num__cuenta" id="num__cuenta" maxlength="20">
+							<input type="text" class="num__cuenta input__lenght" name="num__cuenta" id="num__cuenta" maxlength="20" pattern="\d*" placeholder="Opcional">
 						</div>	
 
 						<div class="data__subcontainer">
@@ -266,7 +266,7 @@
 							<label for="telefono__patrocinador" class="input__title">
 								<span>Telefóno:</span>
 							</label>
-							<input type="number" class="telefono__patrocinador input__lenght" name="telefono__patrocinador" id="telefono__patrocinador" maxlength="9">
+							<input type="number" class="telefono__patrocinador input__lenght" name="telefono__patrocinador" id="telefono__patrocinador" maxlength="9" placeholder="Opcional">
 						</div>	
 
 						<div class="data__subcontainer">

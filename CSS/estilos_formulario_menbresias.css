@@ -240,7 +240,7 @@ footer .footer_div h2{
 
 /*=======================MEDIA QUERIES=======================*/
 @media (min-width: 320px){
-    
+
     .grupo__usuario{
         margin: 0 auto;
     }
@@ -250,7 +250,7 @@ footer .footer_div h2{
         flex-direction: column;
         align-items: center;
     }
-    
+
     .validation__container {
         margin: 80px 20px 20px 20px;
     }
@@ -267,7 +267,7 @@ footer .footer_div h2{
 
     .data__container {
         display: flex;
-        flex-direction: column;     
+        flex-direction: column;
         margin: 20px 30px;
         padding-bottom: 30px;
         text-align: center;
@@ -296,12 +296,12 @@ footer .footer_div h2{
         padding-left: 10px;
     }
 
-    
+
     .grupo__datos-natural{
         margin-left: 0;
         border-top: 1px solid #111;
     }
-    
+
     .input__usuario{
         width: 10rem;
         padding-left: 10px;
@@ -313,7 +313,7 @@ footer .footer_div h2{
 }
 
 @media (min-width: 480px){
-    
+
     .data__subcontainer{
         margin: 0 auto;
         text-align: center;
@@ -321,9 +321,9 @@ footer .footer_div h2{
 
     .input__lenght{
         width: 20rem;
-    } 
+    }
 
-} 
+}
 
 @media (min-width: 720px){
 
