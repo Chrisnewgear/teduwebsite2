@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    
+
 }
 
 
@@ -95,9 +95,9 @@ header .logo span{
     padding-left: 10px;
 }
 
-option{
+/* option{
     background-color: #0df053;
-}
+} */
 
 .formulario__membresia{
     margin: 1rem  20%;

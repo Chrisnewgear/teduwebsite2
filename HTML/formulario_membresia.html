@@ -114,10 +114,10 @@
 						</div>
 						
 						<div class="data__subcontainer">
-							<label for="nombre__usuario" class="input__title">
+							<label for="nombre__ususario" class="input__title">
 								<span>Nombres:</span>
 							</label>
-							<input type="text" class="input__datos input__lenght" name="paterno" id="paterno" required maxlength="20">
+							<input type="text" class="input__datos input__lenght" name="nombre__ususario" id="nombre__ususario" required maxlength="20">
 						</div>
 					</div>
 
@@ -202,17 +202,18 @@
 					</div>
 
 					<div class="data__container data__container-indentificacion-banco">
-						
+
 						<div class="data__subcontainer">
 							<label for="tipo__cuenta" class="input__title">
 								<span>Cuenta bancaria</span>
-							</label>				
-							<select class="tipo__cuenta input__lenght input__lenght-color" name="tipo__cuenta" id="tipo__cuenta">
-								<option value="Pasaporte">Ahorros</option>
-								<option value="Cédula">Corriente</option>
+							</label>
+							<select class="tipo__cuenta input__lenght" name="tipo__cuenta" id="tipo__cuenta">
+								<option value="Ninguna">Ninguna</option>
+								<option value="Ahorros">Ahorros</option>
+								<option value="Corriente">Corriente</option>
 							</select>
 							<input type="text" class="num__cuenta input__lenght" name="num__cuenta" id="num__cuenta" maxlength="20" pattern="\d*" placeholder="Opcional">
-						</div>	
+						</div>
 
 						<div class="data__subcontainer">
 							<label for="banco" class="input__title">
